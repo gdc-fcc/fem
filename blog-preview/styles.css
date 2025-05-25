@@ -63,6 +63,9 @@ h1 {
 
 .author {
   font-weight: 800;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 .author img {
