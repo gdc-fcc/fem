@@ -29,7 +29,6 @@ body{
 
 .card{
   width: 285px;
-  aoutline: 1px solid;
   height: 465px;
   padding: 15px;
   background: var(--col-white);
@@ -51,7 +50,7 @@ body{
 
 .card-p {
   text-align: center;
-  color: hsl(216, 15%, 48%);
+  color: var(--col-500);
   line-height: 1.4em;
   padding-inline: 12px;
 }
