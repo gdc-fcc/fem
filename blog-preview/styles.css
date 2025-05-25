@@ -20,6 +20,7 @@ body{
   justify-content: center;
   height: 100vh;
   font-weight: 500;
+  color: var(--gray-950)
 }
 
 .card {
@@ -66,4 +67,8 @@ h1 {
 
 .author img {
   height: 2em;
+}
+
+.card p {
+  color: var(--gray-500)
 }
