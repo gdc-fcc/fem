@@ -5,6 +5,7 @@
   --col-300: hsl(212, 45%, 89%);
   --col-500: hsl(216, 15%, 48%);
   --col-900: hsl(218, 44%, 22%);
+  --col-link: hsl(228, 45%, 44%);
 }
 
 body{
@@ -25,7 +26,7 @@ body{
   background: white;
   padding: 5px;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--col-link); }
 
 .card{
   width: 285px;
@@ -45,7 +46,7 @@ body{
    text-align: center;
    font-size: 1.4rem;
    margin-block: 20px;
-   color: hsl(218, 44%, 22%);
+   color: var(--col-900);
 }
 
 .card-p {
