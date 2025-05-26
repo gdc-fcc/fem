@@ -89,3 +89,16 @@ ol ::marker,
 ul, ol {
   padding-inline-start: 1.6em;
 }
+
+td:nth-of-type(2) {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+table {
+  width: calc(100% - 4rem)
+}
+
+td {
+  width: 50%;
+}
