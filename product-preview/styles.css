@@ -79,3 +79,22 @@ footer {
 .card-2 {
   padding: 1.6em;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .card {
+     flex-direction: row;
+     max-width: 610px;
+     height: 28.5em;
+  }
+  .card-1{
+     flex: 1 0 50%;
+  }
+  .card-2 {
+     padding: 2em;
+  }
+}
