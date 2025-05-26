@@ -1,3 +1,81 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+:root{
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Montserrat, sans-serif";
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  background: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.price-new {
+  color: var(--green-500);
+}
+
+h1,
+.price-new {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h1{ color: var(--black); }
+
+
+p {
+  afont-size: 0.875em;
+  color: var(--grey)
+}
+
+button {
+  background: var(--green-500);
+  color: var(--white);
+  width: 100%;
+  padding-block: 1rem;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-radius: .5rem;
+  border: 0;
+}
+
+.card {
+  width: calc(100% - 2em);
+  background: white;
+  height: 39em;
+  border-radius: .6em;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.category {
+  text-transform: uppercase;
+  color: var(--grey)
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+}
+
+.product-img {
+  max-width: 100%;
+}
+
+.card-2 {
+  padding: 1.6em;
+}
