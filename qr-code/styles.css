@@ -8,10 +8,13 @@
   --col-link: hsl(228, 45%, 44%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body{
   font-family: "Outfit", sans-serif;
   background: var(--col-300);
-  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,37 +24,44 @@ body{
 
 .attribution { 
   position: absolute;
-  font-size: 11px; text-align: center; 
+  font-size: .8rem;
+  text-align: center;
   bottom: 0;
   background: white;
-  padding: 5px;
+  padding: 0.3em;
 }
-.attribution a { color: var(--col-link); }
+.attribution a {
+  color: var(--col-link);
+}
 
 .card{
-  width: 285px;
-  height: 465px;
-  padding: 15px;
+  width: 20em;
+  height: 31.25em;
+  padding: 1em;
   background: var(--col-white);
-  border-radius: 15px;
+  border-radius: 1.1em;
+  box-shadow: 0.375em 1.56em 1.56em 0em rgba(0, 0, 0, 0.1);
 }
 
 .qr-img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 0.75rem;
 }
 
 .card-title {
    font-weight: 700;
    text-align: center;
-   font-size: 1.4rem;
-   margin-block: 20px;
+   font-size: 1.4em;
+   margin-block: .9em;
+   margin-bottom: .6em;
    color: var(--col-900);
 }
 
 .card-p {
+  font-size: 0.9375em;
   text-align: center;
   color: var(--col-500);
   line-height: 1.4em;
-  padding-inline: 12px;
+  padding-inline: .8rem;
+  margin-bottom: 3rem;
 }
