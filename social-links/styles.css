@@ -6,6 +6,10 @@
   --grey-900: hsl(0, 0%, 8%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; }
 .attribution a { color: hsl(228, 45%, 74%); }
 
@@ -21,10 +25,11 @@ body {
 
 .card {
   background: var(--grey-800);
-  width: 21em;
+  width: 25em;
   padding: 2em;
   border-radius: .7em;
   margin: auto;
+  max-width: calc(100% - 3em);
 }
 
 .buttons {
@@ -71,4 +76,10 @@ h1 {
 
 img {
   margin-inline: auto;
+}
+
+@media (width <= 425px) {
+  .card {
+    padding: 1.5em;
+  }
 }
