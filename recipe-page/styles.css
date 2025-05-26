@@ -5,6 +5,7 @@ body{
   font-family: "Outfit", Arial, sans-serif;
   color: var(--stone-600);
   margin: 0;
+  background: var(--stone-100);
 }
 
 :root {
@@ -55,6 +56,12 @@ b {
 
 .food-img {
   max-width: 100%;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+  background: white;
 }
 
 .wrapper > *:not(img) {
