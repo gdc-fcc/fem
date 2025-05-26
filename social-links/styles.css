@@ -31,7 +31,7 @@ body {
 .card {
   background: var(--grey-800);
   width: 25em;
-  padding: 2em;
+  padding: 2.6em;
   border-radius: .7em;
   margin: auto;
   max-width: calc(100% - 3em);
@@ -40,12 +40,12 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: .9em;
 }
 
 .card button {
   border-radius: .8em;
-  padding: 1.2em;
+  padding: 1.18em;
   background: var(--grey-700);
   color: var(--white);
   border: 0;
@@ -67,11 +67,14 @@ body {
 
 .avatar-img {
   border-radius: 50%;
-  width: 5rem;
+  width: 5.4rem;
 }
 
 h1 {
-  font-size: 1.5em;
+  margin-top: 1.7rem;
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-bottom: .3em;
 }
 
 .bio {
