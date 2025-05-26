@@ -26,10 +26,11 @@ body{
 .card {
   background: var(--white);
   width: var(--img-width);
-  padding: 20px;
+  padding: 1.4em;
   border-radius: 20px;
   box-shadow: 10px 10px;
   outline: .1em solid;
+  height: 30em;
 }
 
 .attribution { 
@@ -54,12 +55,18 @@ button {
   border: 0;
   border-radius: .5em;
   font-weight: 800;
-  margin-block: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.date{
+  font-size: .8em;
 }
 
 h1 {
   font-size: 1.6em;
-  font-weight: 800
+  font-weight: 800;
+  margin-bottom: 0.7em;
 }
 
 .author {
@@ -74,5 +81,7 @@ h1 {
 }
 
 .card p {
-  color: var(--gray-500)
+  color: var(--gray-500);
+  line-height: 1.4em;
+  margin-bottom: 1.7em;
 }
