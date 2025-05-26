@@ -63,7 +63,7 @@ b {
 }
 
 .wrapper {
-  max-width: 700px;
+  max-width: 735px;
   margin-inline: auto;
   background: white;
 }
@@ -116,4 +116,15 @@ tr:not(:first-of-type) > td {
 
 hr {
   color: var(--stone-150);
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+     border-radius: 25px;
+  }
+  .food-img {
+     margin: 40px;
+     width: calc(100% - 80px);
+     border-radius: 10px;
+  }
 }
