@@ -32,7 +32,6 @@ body{
   border-radius: 1.25em;
   box-shadow: 0.625em 0.625em;
   outline: .1em solid;
-  aheight: 30em;
   max-width: calc(100% - 2.8em);
 }
 
