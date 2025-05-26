@@ -1,5 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: .7em; text-align: center; }
+.attribution a { color: var(--link-color); }
 
 :root{
   --green-500: hsl(158, 36%, 37%);
@@ -8,6 +8,8 @@
   --grey: hsl(228, 12%, 48%);
   --cream: hsl(30, 38%, 92%);
   --white: hsl(0, 0%, 100%);
+  --fs-text: 0.875em;
+  --link-color: hsl(228, 45%, 44%);
 }
 
 body {
@@ -42,7 +44,7 @@ h1{
 
 
 p {
-  font-size: 0.875em;
+  font-size: var(--fs-text);
   line-height: 1.6em;
 }
 
@@ -67,11 +69,13 @@ button {
   background: white;
   border-radius: .6em;
   overflow: hidden;
-  max-width: 400px;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .category {
-  font-size: 0.875em;
+  font-size: var(--fs-text);
   text-transform: uppercase;
   letter-spacing: .35em;
   font-size: 0.8em;
@@ -91,15 +95,10 @@ footer {
   padding: clamp(.3rem, 6.4vw, 1.5rem);
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .card {
      flex-direction: row;
-     max-width: 610px;
+     max-width: 38.125em;
      height: 28.5em;
   }
   .card-1{
@@ -113,7 +112,7 @@ footer {
   }
 }
 
-@media (max-width: 195px) {
+@media (max-width: 12.1875em) {
   button > img {
     display: none;
   }
@@ -127,5 +126,5 @@ footer {
 }
 
 .price-old {
-  font-size: 0.875em;
+  font-size: var(--fs-text);
 }
