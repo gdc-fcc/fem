@@ -1,13 +1,28 @@
 # Blog Preview Card
 
-Draft for my submission for the blog preview card challenge. See the [live demo](https://gdc-fcc.github.io/fem/blog-preview/).
+My submission for the blog preview card challenge. See the [live demo](https://gdc-fcc.github.io/fem/blog-preview/).
 
 ![](https://github.com/gdc-fcc/fem/blob/main/blog-preview/assets/images/screenshot.png)
 
-## TODO
+## Technologies used
 
-Part of the challenge is some responsive behavior. In the mobile layout, the image is cropped left and right and the font size is reduced. This should ideally be done without media queries, so probably something like this
+- Vanilla css/html
+- git/GitHub/gh-pages
+- live-preview
+- VIM
+
+## What I've learned
+
+Getting the responsive behavior right was the most challenging part. I ended up using a clamp for the font size and a calc in `max-width`.
 
 ```css
-p { font-size: min(3.2vw, 16px); }
+body{
+  font-size: clamp(0.75rem, 3.82vw,1rem);
+}
+
+main {
+  max-width: calc(100vw - 3.5em)
+}
 ```
+
+Learned a lot from this and using ems to avoid breakpoints.
