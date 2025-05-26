@@ -3,6 +3,7 @@
 
 body{
   font-family: "Outfit", Arial, sans-serif;
+  color: var(--stone-600)
 }
 
 :root {
@@ -21,9 +22,24 @@ h1, h2 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--stone-900)
+}
+
+h2 {
+  color: var(--brown-800);
 }
 
 b {
   /* 600 or 700? */
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--stone-600)
+}
+
+.prep-time {
+  background: var(--rose-50);
+}
+
+.prep-title {
+  font-weight: 700;
+  color: var(--rose-800);
 }
