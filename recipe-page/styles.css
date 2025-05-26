@@ -63,7 +63,7 @@ b {
 }
 
 .wrapper {
-  max-width: 735px;
+  max-width: 46em;
   margin-inline: auto;
   background: white;
 }
@@ -111,20 +111,21 @@ td {
 
 
 tr:not(:first-of-type) > td {
-  border-top: 1px solid var(--stone-100);
+  border-top: .06em solid var(--stone-100);
 }
 
 hr {
   color: var(--stone-150);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .wrapper {
-     border-radius: 25px;
+     border-radius: 1.56em;
+     margin-block: 8em;
   }
   .food-img {
-     margin: 40px;
-     width: calc(100% - 80px);
-     border-radius: 10px;
+     margin: 2.5em;
+     width: calc(100% - 5em);
+     border-radius: 0.625em;
   }
 }
