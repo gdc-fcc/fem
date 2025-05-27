@@ -1,0 +1,110 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--grey-500);
+  margin: 2em;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+.slogan {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+article {
+  padding: 1.5em;
+  box-shadow: .5em .5em 2em -.7em var(--grey-400);
+  border-radius: .5em;
+}
+
+.cards {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr;
+  grid-template-areas: "S" "T" "K" "C";
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+article:nth-of-type(1) {
+  grid-area: S;
+  border-top: 3px solid var(--cyan);
+}
+
+article:nth-of-type(2) {
+  grid-area: T;
+  border-top: 3px solid var(--red);
+}
+
+article:nth-of-type(3) {
+  grid-area: K;
+  border-top: 3px solid var(--orange);
+}
+
+article:nth-of-type(4) {
+  border-top: 3px solid var(--blue);
+  grid-area: C;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+header p {
+  max-width: 29rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 500px) {
+  .cards {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas:
+      "T S"
+      "C K";
+  }
+}
+
+@media (min-width: 755px) {
+  .cards {
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas:
+      ". T ."
+      "S T C"
+      "S K C"
+      ". K .";
+  }
+}
+
