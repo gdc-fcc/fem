@@ -88,16 +88,16 @@ header p {
   margin-inline: auto;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .cards {
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-template-areas:
-      "T S"
-      "C K";
+      "S T"
+      "K C";
   }
 }
 
-@media (min-width: 755px) {
+@media (min-width: 800px) {
   .cards {
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
     grid-template-areas:
@@ -106,5 +106,9 @@ header p {
       "S K C"
       ". K .";
   }
+}
+
+img {
+  float: right;
 }
 
