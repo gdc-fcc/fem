@@ -1,5 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: .7rem; text-align: center; }
+.attribution a { color: var(--link); }
 
 :root {
   --red: hsl(0, 78%, 62%);
@@ -9,6 +9,7 @@
   --grey-500: hsl(234, 12%, 34%);
   --grey-400: hsl(212, 6%, 44%);
   --white: hsl(0, 0%, 100%);
+  --link: hsl(228, 45%, 44%);
 }
 
 * {
@@ -24,6 +25,7 @@ body {
 
 h1, h2 {
   font-weight: 600;
+  margin-block:0;
 }
 
 p {
@@ -47,6 +49,7 @@ article {
   padding: 1.5em;
   box-shadow: .5em .5em 2em -.7em var(--grey-400);
   border-radius: .5em;
+  padding-bottom: 0em
 }
 
 .cards {
@@ -54,27 +57,27 @@ article {
   gap: 2em;
   grid-template-columns: 1fr;
   grid-template-areas: "S" "T" "K" "C";
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin-inline: auto;
 }
 
 article:nth-of-type(1) {
   grid-area: S;
-  border-top: 3px solid var(--cyan);
+  border-top: .2rem solid var(--cyan);
 }
 
 article:nth-of-type(2) {
   grid-area: T;
-  border-top: 3px solid var(--red);
+  border-top: .2rem solid var(--red);
 }
 
 article:nth-of-type(3) {
   grid-area: K;
-  border-top: 3px solid var(--orange);
+  border-top: .2rem solid var(--orange);
 }
 
 article:nth-of-type(4) {
-  border-top: 3px solid var(--blue);
+  border-top: .2rem solid var(--blue);
   grid-area: C;
 }
 
@@ -88,16 +91,19 @@ header p {
   margin-inline: auto;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 34.375rem) {
   .cards {
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-template-areas:
       "S T"
       "K C";
   }
+  .slogan, h1 {
+    font-size: 2rem;
+  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
   .cards {
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
     grid-template-areas:
@@ -110,5 +116,18 @@ header p {
 
 img {
   float: right;
+  margin-block: 2.4em;
+}
+
+.hook {
+  margin-bottom: 4em;
+}
+
+article p {
+  font-size: .8rem
+}
+
+.slogan {
+   margin-bottom: 0
 }
 
