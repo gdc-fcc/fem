@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 1em;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.card {
+  awidth: 400px;
+  outline: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-areas: 
+    "A N S"
+    "A D S"
+}
+
+.avatar {
+  grid-area: A;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.name { grid-area: N}
+
+.date { grid-area: D}
+
+.share { 
+  grid-area: S;
+  background: #dddddd;
+  display: flex;
+  padding: .5em;
+  border-radius: 50%;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 2em; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card-img {
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+@media (min-width: 800px) {
+  .card {
+     flex-direction: row;
+  }
+  .card-img {
+     width: 400px;
+  }
+}
+
