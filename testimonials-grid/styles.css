@@ -151,9 +151,8 @@ main {
   }
   .pitch {
     font-size: 1.99rem;
-    margin-top: 1.6rem;
     line-height: 2.3rem;
-    margin-bottom: 1rem;
+    margin-block: 1.6rem 1rem;
   }
   .quote {
     line-height: 1.8rem;
