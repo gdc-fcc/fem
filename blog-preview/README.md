@@ -1,6 +1,6 @@
 # Blog Preview Card
 
-My submission for the blog preview card challenge. See the [live demo](https://gdc-fcc.github.io/fem/blog-preview/).
+My submission for the [blog preview](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) card challenge. See [my live version](https://gdc-fcc.github.io/fem/blog-preview/).
 
 ![](https://github.com/gdc-fcc/fem/blob/main/blog-preview/assets/images/screenshot.png)
 
