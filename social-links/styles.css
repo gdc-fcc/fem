@@ -44,16 +44,17 @@ body {
   gap: .9em;
 }
 
-.card button {
+.card a {
   border-radius: .8em;
   padding: 1.18em;
   background: var(--grey-700);
   color: var(--white);
   border: 0;
   font-weight: 700;
+  font-size: .832em;
 }
 
-.card button:hover {
+.card a:hover {
   background: var(--green);
   color: var(--grey-900);
   cursor: pointer;
