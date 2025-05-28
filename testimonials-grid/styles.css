@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
