@@ -51,6 +51,8 @@ h1 {
     "A N S"
     "A D S";
   align-items: center;
+  position: relative;
+  margin-top: 1rem;
 }
 
 .avatar {
@@ -98,6 +100,7 @@ h1 {
 
 .card-content {
   padding: 2.4rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,6 +128,37 @@ h1 {
 }
 
 .share:hover img {
+  filter: brightness(0%) invert(90%) sepia(8%) saturate(323%) hue-rotate(186deg) brightness(107%) contrast(94%);
+}
+
+.tooltip {
+  position: absolute;
+  left: -2.4rem;
+  right: -2.4rem;
+  top: -1rem;
+  bottom: -1rem;
+  background: #00000033;
+  background: var(--very-dark-blue);
+  display: flex;
+  padding: 1.5rem;
+  gap: 1rem;
+  color: var(--mid-blue);
+  align-items: center;
+  display: none;
+}
+
+.share-icon-wrap {
+  padding: .65rem;
+  background: var(--dark-blue);
+  width: .9rem;
+  display: flex;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  margin-right: .7rem;
+  margin-left: auto;
+}
+
+.share-icon{
   filter: brightness(0%) invert(90%) sepia(8%) saturate(323%) hue-rotate(186deg) brightness(107%) contrast(94%);
 }
 
