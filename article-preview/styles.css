@@ -14,19 +14,24 @@
 body {
   font-family: "Manrope", Arial, sans-serif;
   font-weight: 500;
-  margin: 1.5em;
+  margin: 1.9em;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 3em);
+  height: calc(100vh - 2.6em);
   background: var(--light-blue);
   color: var(--dark-blue);
 }
 
 h1 {
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   color: var(--very-dark-blue);
   font-weight: 700;
+}
+
+.card-content > p {
+  font-size: 1.05rem;
+  line-height: 1.5rem;
 }
 
 .card {
@@ -41,7 +46,7 @@ h1 {
 
 .card-footer {
   display: grid;
-  grid-template-columns: 60px 1fr 40px;
+  grid-template-columns: 60px 1fr 30px;
   grid-template-areas: 
     "A N S"
     "A D S"
@@ -67,8 +72,9 @@ h1 {
   grid-area: S;
   background: var(--light-blue);
   display: flex;
-  padding: .7em;
+  padding: .65rem;
   border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 .attribution {
@@ -89,7 +95,7 @@ h1 {
 }
 
 .card-content {
-  padding: 2em;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
