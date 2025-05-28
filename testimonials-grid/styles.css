@@ -6,6 +6,8 @@
 body{
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
+  font-size: 1.3rem;
+  background: var(--grey-100);
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -14,7 +16,8 @@ body{
 article {
   outline: 1px solid;
   max-width: 600px;
-  padding: 1em;
+  padding: 3rem;
+  border-radius: .5rem;
 }
 
 :root {
@@ -28,6 +31,7 @@ article {
   --grey-500: hsl(217, 19%, 35%);
   --dark-blue: hsl(219, 29%, 14%);
   --black: hsl(0, 0%, 7%);
+  font-size: 62.5%;
 }
 
 article:nth-of-type(1) {
@@ -39,11 +43,13 @@ article:nth-of-type(1) {
 article:nth-of-type(2) {
   grid-area: Jo;
   background: var(--grey-500);
-  color: white;
+  color: var(--white);
 }
 
 article:nth-of-type(3) {
   grid-area: Ja;
+  background: var(--white);
+  color: var(--grey-500);
 }
 
 article:nth-of-type(4) {
@@ -54,11 +60,13 @@ article:nth-of-type(4) {
 
 article:nth-of-type(5) {
   grid-area: Ki;
+  background: var(--white);
+  color: var(--grey-500);
 }
 
 main {
   display: grid;
-  gap: 1em;
+  gap: 3rem;
   grid-template-areas: "Da" "Jo" "Ja" "Pa" "Ki"
 }
 
@@ -69,4 +77,10 @@ main {
       "Da Da Jo Ki"
       "Ja Pa Pa Ki"
   }
+}
+
+.pitch {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 1rem;
 }
