@@ -87,8 +87,15 @@ img {
   margin-inline: auto;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 26.56rem) {
   .card {
     padding: 1.5em;
+  }
+}
+
+@media (max-width: 20rem) {
+  .card {
+    padding: .5em;
+    max-width: calc(100% - 1rem);
   }
 }
