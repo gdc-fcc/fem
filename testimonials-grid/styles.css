@@ -181,3 +181,11 @@ footer {
   left: 0;
   right: 0;
 }
+
+img[alt="avatar patrick"] {
+  outline: .15rem solid var(--purple-500);
+}
+
+img[alt="avatar daniel"] {
+  outline: .15rem solid var(--purple-300);
+}
