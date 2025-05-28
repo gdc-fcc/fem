@@ -8,6 +8,7 @@ body{
   font-weight: 500;
   font-size: 1.3rem;
   background: var(--grey-100);
+  margin: 1em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -83,4 +84,27 @@ main {
   font-size: 1.5em;
   font-weight: 600;
   margin-block: 1rem;
+}
+
+img {
+  border-radius: 50%;
+  height: 3rem;
+  grid-area: P;
+}
+
+.user div:nth-of-type(1) {
+  grid-area: N;
+  font-size: 1.5rem;
+}
+
+.user div:nth-of-type(2) {
+  grid-area: S
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas:
+    "P N"
+    "P S"
 }
