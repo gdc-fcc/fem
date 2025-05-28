@@ -19,7 +19,7 @@ body{
 article {
   max-width: 600px;
   padding: 3.6rem;
-  border-radius: .5rem;
+  border-radius: .75rem;
   box-shadow: .5rem .5rem 2rem 1rem var(--grey-200);
   position: relative;
 }
@@ -78,15 +78,16 @@ main {
 }
 
 .pitch {
-  font-size: 1.55em;
+  font-size: 1.3em;
   line-height: 2.4rem;
   font-weight: 600;
-  margin-block: 1rem;
+  margin-block: 1.4rem;
 }
 
 .quote {
   color: var(--grey-100);
-  line-height: 1.8rem;
+  line-height: 1.75rem;
+  font-size: 1.16rem;
 }
 
 .quote-light {
@@ -95,11 +96,12 @@ main {
 
 .user div:nth-of-type(1) {
   grid-area: N;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .user div:nth-of-type(2) {
-  grid-area: S
+  grid-area: S;
+  font-size: 1.1rem;
 }
 
 .big-quotes {
@@ -149,13 +151,11 @@ main {
     font-size: 1.99rem;
     margin-top: 1.6rem;
     line-height: 2.3rem;
+    margin-bottom: 1rem;
   }
-
-  .user div:nth-of-type(1) {
-    font-size: 1.2rem;
-  }
-  .user div:nth-of-type(2) {
-    font-size: 1.1rem;
+  .quote {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
   }
 }
 
