@@ -83,6 +83,7 @@ main {
   line-height: 2.45rem;
   font-weight: 600;
   margin-block: 1.4rem;
+  position: relative;
 }
 
 .quote {
