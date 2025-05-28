@@ -68,10 +68,34 @@ article:nth-of-type(5) {
 main {
   display: grid;
   gap: 3rem;
-  grid-template-areas: "Da" "Jo" "Ja" "Pa" "Ki"
+  grid-template-areas: "Da" "Jo" "Ja" "Pa" "Ki";
+  max-width: 114rem;
+  margin: auto;
+  width: fit-content;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Da Da"
+      "Jo Ja"
+      "Pa Pa"
+      "Ki Ki";
+  }
+}
+
+@media (min-width: 690px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Da Da Jo"
+      "Ja Pa Pa"
+      "Ki Ki ."
+  }
+}
+
+@media (min-width: 1000px) {
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
