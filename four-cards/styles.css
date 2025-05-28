@@ -29,25 +29,26 @@ h1, h2 {
 }
 
 p {
-  font-size: 0.9375em;
+  font-size: 0.96rem;
 }
 
 .slogan {
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1.45em;
+  margin-top: 3.5rem;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.45em;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.27em;
 }
 
 article {
   padding: 1.5em;
-  box-shadow: .5em .5em 2em -.7em var(--grey-400);
+  box-shadow: .2em .5em 2em -.9em var(--grey-400);
   border-radius: .5em;
   padding-bottom: 0em
 }
@@ -63,21 +64,21 @@ article {
 
 article:nth-of-type(1) {
   grid-area: S;
-  border-top: .2rem solid var(--cyan);
+  border-top: .3rem solid var(--cyan);
 }
 
 article:nth-of-type(2) {
   grid-area: T;
-  border-top: .2rem solid var(--red);
+  border-top: .3rem solid var(--red);
 }
 
 article:nth-of-type(3) {
   grid-area: K;
-  border-top: .2rem solid var(--orange);
+  border-top: .3rem solid var(--orange);
 }
 
 article:nth-of-type(4) {
-  border-top: .2rem solid var(--blue);
+  border-top: .3rem solid var(--blue);
   grid-area: C;
 }
 
@@ -103,6 +104,11 @@ header p {
   }
 }
 
+article p {
+  font-size: .82rem;
+  margin-top: .4rem;
+}
+
 @media (min-width: 50rem) {
   .cards {
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
@@ -111,6 +117,27 @@ header p {
       "S T C"
       "S K C"
       ". K .";
+    margin-top: 4.5em;
+  }
+  body{
+    margin-top: 6.32rem;
+  }
+  article > img {
+    margin-top: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  article p {
+    font-size: .8rem;
+  }
+  .slogan, h1 {
+    font-size: 2.3rem;
+  }
+  h1 {
+    line-height: 1.2em;
+  }
+  .hook {
+    max-width: 34em;
+    margin-top: 1rem;
   }
 }
 
@@ -120,12 +147,9 @@ img {
 }
 
 .hook {
-  margin-bottom: 4em;
+  margin-bottom: 3.6em;
 }
 
-article p {
-  font-size: .8rem
-}
 
 .slogan {
    margin-bottom: 0
