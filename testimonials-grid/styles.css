@@ -9,6 +9,8 @@ body{
   font-size: 1.3rem;
   background: var(--grey-100);
   margin: 3rem;
+  display: flex;
+  min-height: calc(100vh - 6rem)
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -134,4 +136,11 @@ img {
   grid-template-areas:
     "P N"
     "P S"
+}
+
+footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
