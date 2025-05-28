@@ -14,7 +14,7 @@ body{
 }
 
 .attribution { font-size: 1.1rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--link); }
 
 article {
   max-width: 60rem;
@@ -35,6 +35,7 @@ article {
   --grey-500: hsl(217, 19%, 35%);
   --dark-blue: hsl(219, 29%, 14%);
   --black: hsl(0, 0%, 7%);
+  --link: hsl(228, 45%, 44%);
   font-size: 62.5%;
 }
 
@@ -110,7 +111,6 @@ main {
   top: 0;
   right: 5.5rem;
   height: 10.5rem;
-  awidth: 11.5rem;
   aspect-ratio: 104 / 102;
   border-radius: 0;
   display: none;
