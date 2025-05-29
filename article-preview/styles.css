@@ -187,3 +187,10 @@ h1 {
   filter: brightness(0%) invert(90%) sepia(8%) saturate(323%) hue-rotate(186deg) brightness(107%) contrast(94%);
 }
 
+.share-link {
+  cursor: pointer;
+}
+
+.share-link:hover {
+  filter: brightness(0%) invert(73%) sepia(58%) saturate(328%) hue-rotate(355deg) brightness(102%) contrast(102%);
+}
