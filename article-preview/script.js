@@ -1,7 +1,7 @@
-const qs = q => document.querySelector(q);
+const qs = q => document.querySelectorAll(q);
 
 const toggleTooltip = () => {
-  const tt = qs(".tooltip");
+  const tt = qs(".tooltip")[0];
   if (tt.style.display !== "flex") {
     tt.style.display = "flex";
   } else {
@@ -9,5 +9,6 @@ const toggleTooltip = () => {
   }
 }
 
-qs(".share-icon").addEventListener("click", toggleTooltip);
-qs("[alt='share']").addEventListener("click", toggleTooltip);
+qs(".tt-trigger").forEach(x => {
+  x.addEventListener("click", toggleTooltip);
+})
