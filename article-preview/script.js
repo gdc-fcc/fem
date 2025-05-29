@@ -1,5 +1,9 @@
 const qs = q => document.querySelectorAll(q);
 
+qs('[rel="preload"]').forEach(el => {
+  el.rel = "stylesheet"
+})
+
 const toggleTooltip = () => {
   const tt = qs(".tooltip")[0];
   if (tt.style.display !== "flex") {
