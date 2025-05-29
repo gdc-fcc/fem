@@ -1,14 +1,13 @@
-const qs = q => document.querySelector(q)
+const qs = q => document.querySelector(q);
 
-shareIcon = qs(".share-icon");
-shareIcon2 = qs("[alt='share']");
+const toggleTooltip = () => {
+  const tt = qs(".tooltip");
+  if (tt.style.display !== "flex") {
+    tt.style.display = "flex";
+  } else {
+    tt.style.display = "none";
+  }
+}
 
-console.log({shareIcon, shareIcon2})
-
-shareIcon.addEventListener("click", () =>  {
-  qs(".tooltip").style.display = "none"
-})
-
-shareIcon2.addEventListener("click", () =>  {
-  qs(".tooltip").style.display = "flex"
-})
+qs(".share-icon").addEventListener("click", toggleTooltip);
+qs("[alt='share']").addEventListener("click", toggleTooltip);
