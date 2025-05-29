@@ -6,5 +6,5 @@ My submission for the [QR card](https://www.frontendmentor.io/challenges/qr-code
 
 ## Technologies used
 
-- Vanilla JS/CSS
+- Vanilla HTML/CSS
 - Git/GitHib/gh-pages

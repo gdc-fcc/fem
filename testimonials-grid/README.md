@@ -6,6 +6,6 @@ My submission for the [testimonials challenge](https://www.frontendmentor.io/cha
 
 ## Technologies used
 
-- Vanilla JS/CSS
+- Vanilla HTML/CSS
 - Git/GitHib/gh-pages
 - CSS grid with breakpoints

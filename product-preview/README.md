@@ -6,6 +6,6 @@ My submission for the [product preview](https://www.frontendmentor.io/challenges
 
 ## Technologies used
 
-- Vanilla JS/CSS
+- Vanilla HTML/CSS
 - Git/GitHib/gh-pages
 - CSS grid with breakpoints

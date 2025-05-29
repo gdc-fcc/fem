@@ -6,6 +6,6 @@ My submission for the [four cards challenge](https://www.frontendmentor.io/chall
 
 ## Technologies used
 
-- Vanilla JS/CSS
+- Vanilla HTML/CSS
 - Git/GitHib/gh-pages
 - CSS grid with breakpoints
