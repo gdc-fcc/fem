@@ -1,7 +1,8 @@
 const qs = q => document.querySelectorAll(q);
 
 qs('[rel="preload"]').forEach(el => {
-  el.rel = "stylesheet"
+  el.rel = "stylesheet";
+  el.removeAttribute("as");
 })
 
 const toggleTooltip = () => {
