@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 2.6em);
+  height: calc(100vh - 3.8em);
   background: var(--light-blue);
   color: var(--dark-blue);
 }
