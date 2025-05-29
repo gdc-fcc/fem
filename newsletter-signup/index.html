@@ -23,13 +23,13 @@
   </ul>
   <form>
     <label for="email">Email address</label>
-    <input type="email" name="email" placeholder="email@company.com">
+    <input type="email" name="email" placeholder="email@company.com" required>
     <button type="submit">Subscribe to monthly newsletter</button>
   </form>
   </div>
   <dialog closedby="any">
     <h2>Thanks for subscribing!</h2>
-    A confirmation email has been sent to ash@loremcompany.com. 
+    A confirmation email has been sent to <span id="email">ash@loremcompany.com</span>. 
     Please open it and click the button inside to confirm your subscription.
     <button autofocus>Dismiss message</button>
   </dialog>
