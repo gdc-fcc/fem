@@ -9,6 +9,7 @@ qs('button[type="submit"]').addEventListener('click', e => {
     qs("#email").innerText = email;
     qs("dialog").showModal();
   } else {
+    qs("input").required = true;
     qs(".error").classList.remove("shake");
     setTimeout(_ => qs(".error").classList.add("shake"), 50);
     setTimeout(_ => qs(".error").classList.remove("shake"), 500);
@@ -16,5 +17,5 @@ qs('button[type="submit"]').addEventListener('click', e => {
 })
 
 qs("#close-modal").addEventListener('click', _ => {
-  qs("dialog").close()
+  qs("dialog").close();
 })
