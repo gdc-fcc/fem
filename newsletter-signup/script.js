@@ -18,6 +18,6 @@ qs('button[type="submit"]').addEventListener('click', e => {
   }
 })
 
-qs("dialog button").addEventListener('click', _ => {
+qs("#close-modal").addEventListener('click', _ => {
     qs("dialog").close()
 })
