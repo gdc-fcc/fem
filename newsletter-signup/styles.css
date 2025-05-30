@@ -64,7 +64,7 @@ button {
   width: 100%;
   background: var(--blue-800);
   color: var(--white);
-  padding-block: 1rem;
+  padding: 1rem;
   font-weight: 700;
   border-radius: .5rem;
   font-size: 1.0rem;
@@ -216,4 +216,15 @@ p {
   color:hsl(4, 100%, 67%);
   font-weight: 700;
   display: none;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0rem); }
+  25% { transform: translateX(0.5rem); }
+  75% { transform: translateX(-0.5rem); }
+  100% { transform: translateX(0rem); }
+}
+
+.shake {
+  animation: shake 0.2s ease-in-out 0s 2;
 }
