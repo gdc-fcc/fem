@@ -26,8 +26,8 @@
     <li>And much more!</li>
   </ul>
   <form>
-    <label for="email">Email address</label>
-    <input type="email" name="email" placeholder="email@company.com" required>
+    <div class="mail-label-wrap"><label for="email">Email address</label> <span class="error">Valid email required</span></div>
+    <input type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}">
     <button type="submit"><div>Subscribe to monthly newsletter</div></button>
   </form>
   </div>
@@ -38,7 +38,7 @@
     <p>A confirmation email has been sent to <span id="email">ash@loremcompany.com</span>. 
     Please open it and click the button inside to confirm your subscription.</p>
     <div class="spacer"></div>
-    <button autofocus id="close-modal">Dismiss message</button>
+    <button id="close-modal">Dismiss message</button>
   </dialog>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

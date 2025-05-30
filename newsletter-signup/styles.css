@@ -37,7 +37,6 @@ main {
 
 label {
   font-weight: 600;
-  font-size: .8rem;
 }
 
 input[type="email"] {
@@ -46,6 +45,19 @@ input[type="email"] {
   border-radius: .5rem;
   border: 1px solid var(--grey);
   font-size: 1rem;
+  cursor:pointer;
+}
+
+input[type="email"]:hover, input[type="email"]:focus {
+  outline: 1px solid black;  
+}
+
+#email {
+    font-weight: 700;
+}
+
+body:has(input:invalid) .error {
+    display: block;
 }
 
 button {
@@ -56,6 +68,12 @@ button {
   font-weight: 700;
   border-radius: .5rem;
   font-size: 1.0rem;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+   background: linear-gradient(90deg, var(--red), hsl(22, 80%, 47%));
+   box-shadow: 1rem 1rem 2rem -.5rem hsl(2, 80%, 84%);
 }
 
 .attribution { 
@@ -74,8 +92,10 @@ input {
   margin-block: 1em;
 }
 
-input:invalid {
+input:invalid:not(:focus) {
   border: 1px solid var(--red);
+  background:hsl(4, 100%, 95%);
+    color:hsl(4, 80%, 57%);
 }
 
 dialog[open] {
@@ -90,6 +110,8 @@ dialog[open] {
     top: 0;
     bottom: 0;
     z-index: 1;
+    color: var(--blue-700);
+
 }
 
 .spacer {
@@ -157,6 +179,9 @@ p {
     h1 {
         font-size: 3.6rem;
     }
+    h2 {
+        font-size: 3.5rem;
+    }
     .hero-img {
         content: url("./assets/images/illustration-sign-up-desktop.svg");
         height: 593px;
@@ -173,6 +198,7 @@ p {
         max-height: 32rem;
         margin: auto;
         border-radius: 2rem;
+        padding: 4rem;
     }
     ::backdrop {
         background: hsl(234, 29%, 20%);
@@ -180,4 +206,16 @@ p {
     body {
         margin: 1rem;
     }
+}
+
+.mail-label-wrap{
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+
+.error {
+    color:hsl(4, 100%, 67%);
+    font-weight: 700;
+    display: none;
 }
