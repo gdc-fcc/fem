@@ -4,6 +4,14 @@
   --blue-700: hsl(235, 18%, 26%);
   --grey: hsl(0, 0%,58%);
   --white: hsl(0, 0%, 100%);
+  --gradient-start: hsl(353.89deg 100% 67.25%);
+  --gradient-end: hsl(7.42deg 100% 65.1%);
+  --box-shadow: hsl(2, 80%, 82%);
+  --link: hsl(228, 45%, 44%);
+  --invalid-input-border: hsl(4, 70%, 47%);
+  --invalid-input-background: hsl(4, 100%, 95%);
+  --invalid-input-color: hsl(4, 60%, 57%);
+  --error-explanation-color: hsl(4, 70%, 57%);
 }
 
 h1 {
@@ -50,7 +58,7 @@ input[type="email"] {
 }
 
 input[type="email"]:hover, input[type="email"]:focus {
-  outline: .0625rem solid black;  
+  outline: .0625rem solid var(--grey);  
 }
 
 #email {
@@ -73,8 +81,8 @@ button {
 }
 
 button:hover, button:focus-visible {
-  background: linear-gradient(90deg, hsl(353.89deg 100% 67.25%), hsl(7.42deg 100% 65.1%));
-  box-shadow: 1rem 1.5rem 2rem -.5rem hsl(2, 80%, 82%);
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  box-shadow: 1rem 1.5rem 2rem -.5rem var(--box-shadow);
 }
 
 .attribution { 
@@ -87,16 +95,16 @@ button:hover, button:focus-visible {
   display: none;
 }
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--link); }
 
 input {
   margin-block: .6rem 1.5rem;
 }
 
 input:invalid:not(:focus) {
-  border: .0625rem solid hsl(4, 70%, 47%);
-  background:hsl(4, 100%, 95%);
-  color:hsl(4, 60%, 57%);
+  border: .0625rem solid var(--invalid-input-border);
+  background: var(--invalid-input-background);
+  color: var(--invalid-input-color);
 }
 
 dialog[open] {
@@ -203,7 +211,7 @@ p {
     padding: 4rem;
   }
   ::backdrop {
-    background: hsl(234, 29%, 20%);
+    background: var(--ble-800);
   }
   body {
     margin: 1rem;
@@ -231,7 +239,7 @@ p {
 }
 
 .error {
-  color:hsl(4, 70%, 57%);
+  color: var(--error-explanation-color);
   font-weight: 700;
   display: none;
 }
