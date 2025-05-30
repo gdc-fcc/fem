@@ -89,10 +89,9 @@ button:hover, button:focus-visible {
   font-size: .7rem; 
   text-align: center; 
   position: absolute;
-  bottom: 0;
+  bottom: -1.5rem;
   left: 0;
   right: 0;
-  display: none;
 }
 
 .attribution a { color: var(--link); }
@@ -255,4 +254,8 @@ p {
   .shake {
     animation: shake 0.2s ease-in-out 0s 2;
   }
+}
+
+.attribution-wrap {
+  position: relative;
 }
