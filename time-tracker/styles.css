@@ -12,6 +12,7 @@
   --white: hsl(0, 0%, 100%);
   --link: hsl(228, 45%, 44%);
   --navy-100: hsl(236, 100%, 92%);
+  --navy-50: hsl(236, 100%, 96%);
   --navy-800: hsl(232.84deg 38.73% 33.94%);
 }
 
@@ -138,13 +139,15 @@ h2 {
   color: var(--white);
 }
 
-.select-period > *:hover{
-  color: var( --navy-100);
-}
-
 .activity-card:hover > .card-top {
   background: var(--navy-800);
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .select-period > *:hover{
+    color: var( --navy-100);
+  }
 }
 
 .value-previous {
@@ -206,4 +209,8 @@ h2 {
   .cards-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.navy-50 {
+    color: var(--navy-50)
 }
