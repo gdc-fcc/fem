@@ -117,7 +117,7 @@ h2 {
 }
 
 .activity-card {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .activity-img {
@@ -143,7 +143,7 @@ h2 {
   cursor: pointer;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 460px) {
   .cards-grid {
     grid-template-columns: 1fr 1fr ;
   }
@@ -153,24 +153,34 @@ h2 {
   .user-info {
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
   }
   .select-period {
     flex-direction: column;
+    gap: 1.3rem;
   }
   .activity-values {
     flex-direction: column;
     align-items: flex-start;
   }
+  h1 {
+    font-size: 2.6rem;
+    margin-block-end: 4rem;
+  }
+  .value-current {
+    font-size: 3.5rem;
+    margin-block: 2rem .5rem;
+  }
 }
 
 @media (min-width: 660px) {
-    .cards-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media (min-width: 860px) {
-    .cards-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
+@media (min-width: 905px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
