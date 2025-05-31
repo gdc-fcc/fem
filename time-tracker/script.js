@@ -1,5 +1,10 @@
 qs = q => document.querySelector(q);
 
+document.querySelectorAll('[rel="preload"]').forEach(el => {
+  el.rel = "stylesheet";
+  el.removeAttribute("as");
+})
+
 const data = [];
 
 fetch("data.json")
