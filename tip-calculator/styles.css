@@ -31,6 +31,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
     font-weight: 700;
+    min-height: calc(100vh - 2rem);
+    display: flex;
 }
 
 main {
@@ -165,4 +167,38 @@ div:has(> .npeople):before {
     left: 1rem;
     top: 55%;
     translate: 0 -50%;
+}
+
+@media (min-width: 710px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    max-width: 920px;
+  }
+  .output, .output-box {
+    height: 100%;
+    margin: 0;
+  }
+  .output-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+  .spacer {
+    flex-grow: 1;
+  }
+  .output-result-right {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 875px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .tip-percent-options {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
 }
