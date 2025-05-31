@@ -1,0 +1,119 @@
+:root {
+  --green-900: hsl(183, 100%, 15%);
+  --grey-500: hsl(186, 14%, 43%);
+  --grey-400: hsl(184, 14%, 56%);
+  --grey-200: hsl(185, 41%, 84%);
+  --grey-50: hsl(189, 47%, 97%);
+  --white: hsl(0, 100%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    display: none;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background: var(--grey-200);
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+main {
+    background: white;
+    max-width: 375px;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.bill, .npeople {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid;
+    border-radius: .5rem;
+    background: var(--grey-50);
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--green-900);
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+}
+
+label {
+    font-weight: 600;
+    margin-block: 1.4rem .4rem;
+    display: inline-block;
+    color: var(--grey-500)
+}
+
+.output-box {
+    background-color: var(--green-900);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    width: 100%;
+    background: hsl(173.47deg 100% 37.84%);
+    color: var(--green-900);
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    font-weight: 700;
+}
+
+.output-result {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output-result-right {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(173.47deg 100% 37.84%);
+}
+
+.tip-percent-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.tip-percent-options > * {
+    background-color: var(--green-900);
+    color: white;
+    padding: .75rem;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.output-pp {
+    color: var(--grey-400)
+}
+
+.option-custom {
+    background: var(--grey-50);
+    color: var(--grey-500);
+}
