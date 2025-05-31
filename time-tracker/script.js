@@ -44,7 +44,7 @@ const lastText = {"daily": "Yesterday", "weekly": "Last Week",
 
 const insertCard = (activity, timeframe) => {
   const key = toKebapCase(activity);
-  const el = data.find(x => x.title === activity)
+  const el = data.find(x => x.title === activity);
   const tf = el.timeframes[timeframe];
   const res = template({
     name: activity,
@@ -54,26 +54,23 @@ const insertCard = (activity, timeframe) => {
     img: key,
     color: colors[key]
   });
-  const div = document.createElement("div")
-  div.setAttribute("class", "activity-wrap")
+  const div = document.createElement("div");
+  div.setAttribute("class", "activity-wrap");
   div.innerHTML = res;
-  qs(".cards-grid").appendChild(div)
+  qs(".cards-grid").appendChild(div);
 }
 
 clearCards = () => document.querySelectorAll(".activity-wrap")
   .forEach(el => el.remove());
 
 insertAll = (timeframe) => {
-  clearCards()
-  data.forEach(x => {
-    insertCard(x.title, timeframe)
-  })
-  document.querySelectorAll(".select-period > *").forEach(el => {
-    el.removeAttribute("selected")
-    qs(`#${timeframe}`).setAttribute("selected", "selected")
-  })
+  clearCards();
+  data.forEach(x => insertCard(x.title, timeframe));
+  document.querySelectorAll(".select-period > *")
+    .forEach(el => el.removeAttribute("selected"));
+  qs(`#${timeframe}`).setAttribute("selected", "selected");
 }
 
-qs("#daily").addEventListener("click", () => insertAll("daily"))
-qs("#weekly").addEventListener("click", () => insertAll("weekly"))
-qs("#monthly").addEventListener("click", () => insertAll("monthly"))
+qs("#daily").addEventListener("click", () => insertAll("daily"));
+qs("#weekly").addEventListener("click", () => insertAll("weekly"));
+qs("#monthly").addEventListener("click", () => insertAll("monthly"));
