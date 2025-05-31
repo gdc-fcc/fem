@@ -10,6 +10,9 @@
   --purple-500: hsl(235, 45%, 61%);
   --navy-200: hsl(236, 100%, 87%);
   --white: hsl(0, 0%, 100%);
+  --link: hsl(228, 45%, 44%);
+  --navy-100: hsl(236, 100%, 92%);
+  --navy-800: hsl(232.84deg 38.73% 33.94%);
 }
 
 .card {
@@ -37,7 +40,7 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--link);
 }
 
 .avatar {
@@ -136,11 +139,11 @@ h2 {
 }
 
 .select-period > *:hover{
-  color: hsl(236, 100%, 92%);
+  color: var( --navy-100);
 }
 
 .activity-card:hover > .card-top {
-  background: hsl(232.84deg 38.73% 33.94%);
+  background: var(--navy-800);
   cursor: pointer;
 }
 
