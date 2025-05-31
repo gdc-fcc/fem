@@ -1,5 +1,10 @@
 const qs = q => document.querySelector(q)
 
+document.querySelectorAll('[rel="preload"]').forEach(el => {
+    el.rel = "stylesheet";
+    el.removeAttribute("as");
+})
+
 const custom = document.querySelector(".option-custom")
 const tipButtons = document.querySelectorAll(".tip-percent-options > div");
 
