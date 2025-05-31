@@ -92,6 +92,10 @@ h1 {
   width: 21px;
 }
 
+.activity-menu:hover {
+  filter:brightness(200%);
+}
+
 .activity-values {
   display: flex;
   justify-content: space-between;
@@ -126,4 +130,13 @@ h2 {
 
 .select-period > *[selected]{
   color: white;
+}
+
+.select-period > *:hover{
+  color: hsl(236, 100%, 92%);
+}
+
+.activity-card:hover > .card-top {
+  background: hsl(232.84deg 38.73% 33.94%);
+  cursor: pointer;
 }
