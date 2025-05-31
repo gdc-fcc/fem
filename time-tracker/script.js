@@ -63,6 +63,10 @@ insertAll = (timeframe) => {
   data.forEach(x => {
     insertCard(x.title, timeframe)
   })
+  document.querySelectorAll(".select-period > *").forEach(el => {
+    el.removeAttribute("selected")
+    qs(`#${timeframe}`).setAttribute("selected", "selected")
+  })
 }
 
 qs("#daily").addEventListener("click", () => insertAll("daily"))

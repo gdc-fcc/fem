@@ -115,3 +115,12 @@ h2 {
   top: -.5rem;
   right: 0;
 }
+
+.select-period > *{
+  color: var(--navy-200);
+  cursor: pointer;
+}
+
+.select-period > *[selected]{
+  color: white;
+}
