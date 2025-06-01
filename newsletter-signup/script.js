@@ -24,3 +24,6 @@ qs('button[type="submit"]').addEventListener('click', e => {
 qs("#close-modal").addEventListener('click', _ => {
   qs("dialog").close();
 })
+
+const octocat = {color: 'var(--blue-800)', fill: "var(--red)",
+  url: "https://github.com/gdc-fcc/fem/tree/main/newsletter-signup"};
