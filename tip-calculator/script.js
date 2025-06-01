@@ -76,3 +76,6 @@ qs("button").addEventListener("click", e => {
     qs("#tip").innerText = "$0.00";
     qs("#total").innerText = "$0.00";
 })
+
+const octocat = {fill: "#00494d",  color: "#c5e4e7",
+    url: "https://github.com/gdc-fcc/fem/tree/main/tip-calculator"};
