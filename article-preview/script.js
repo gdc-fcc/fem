@@ -27,3 +27,6 @@ document.addEventListener("click", closeOnClickOutside)
 qs(".tt-trigger").forEach(x => {
   x.addEventListener("click", toggleTooltip);
 })
+
+const octocat = {color: 'var(--light-blue)', fill: "hsl(169.18deg 29.76% 40.2%)",
+  url: "https://github.com/gdc-fcc/fem/tree/main/article-preview"};
