@@ -25,5 +25,5 @@ qs("#close-modal").addEventListener('click', _ => {
   qs("dialog").close();
 })
 
-const octocat = {color: 'var(--blue-800)', fill: "var(--red)",
-  url: "https://github.com/gdc-fcc/fem/tree/main/newsletter-signup"};
+import {octocat} from "../octocat.js";
+octocat({fill: "var(--red)"});

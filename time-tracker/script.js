@@ -1,4 +1,4 @@
-qs = q => document.querySelector(q);
+const qs = q => document.querySelector(q);
 
 document.querySelectorAll('[rel="preload"]').forEach(el => {
   el.rel = "stylesheet";
@@ -60,10 +60,10 @@ const insertCard = (activity, timeframe) => {
   qs(".cards-grid").appendChild(div);
 }
 
-clearCards = () => document.querySelectorAll(".activity-wrap")
+const clearCards = () => document.querySelectorAll(".activity-wrap")
   .forEach(el => el.remove());
 
-insertAll = (timeframe) => {
+const insertAll = (timeframe) => {
   clearCards();
   data.forEach(x => insertCard(x.title, timeframe));
   document.querySelectorAll(".select-period > *")
@@ -75,5 +75,5 @@ qs("#daily").addEventListener("click", () => insertAll("daily"));
 qs("#weekly").addEventListener("click", () => insertAll("weekly"));
 qs("#monthly").addEventListener("click", () => insertAll("monthly"));
 
-const octocat = {color: 'var(--navy-950)', fill: colors.exercise,
-  url: "https://github.com/gdc-fcc/fem/tree/main/time-tracker"};
+import {octocat} from "../octocat.js";
+octocat({fill: colors.exercise});

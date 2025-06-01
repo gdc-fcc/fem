@@ -8,6 +8,7 @@
   --white: hsl(0, 100%, 100%);
   --btn-hover: hsl(173.08deg 61.9% 75.29%);
   --error: hsl(9.84deg 60.4% 60.39%);
+  --accent: hsl(183, 100%, 15%);
 }
 
 * {

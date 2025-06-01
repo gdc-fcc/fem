@@ -51,8 +51,9 @@
       <div class="challenge"><a href="tip-calculator/">tip-calculator</a>: A calculator app to split tips.</div>
       <h2>Accessibility</h2>
     </main>
-    <script>const octocat = {fill: "hsl(40, 65%, 60%)", color: "hsl(0 0 10%)",
-      url: "https://github.com/gdc-fcc/fem/"}</script>
-    <script src="octocat.js"></script>
+    <script type="module">
+      import {octocat} from "./octocat.js";
+      octocat({fill: "hsl(40, 65%, 60%)", url: "https://github.com/gdc-fcc/fem/"});
+    </script>
   </body>
 </html>
