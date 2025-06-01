@@ -10,3 +10,10 @@ A tip calculator app for the [time tracker](https://www.frontendmentor.io/challe
 - git/github/gh-pages
 - html/preview
 - VS code
+
+## TODO
+
+- different error messges based on `qs("input").validity`
+- add `images/logo.svg`
+- change styling on reset button of there is nothing
+  to reset

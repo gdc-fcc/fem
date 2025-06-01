@@ -16,19 +16,34 @@
 <body>
   <main>
     <div class="input">
-      <label>Bill</label>
-      <div><input type="number" class="bill" value="142.55" placeholder="0"></div>
-      <label>Select Tip %</label>
-      <div class="tip-percent-options">
-        <div data-value="5" data-active="false">5%</div>
-        <div data-value="10" data-active="false">10%</div>
-        <div data-value="15" data-active="true">15%</div>
-        <div data-value="25" data-active="false">25%</div>
-        <div data-value="50" data-active="false">50%</div>
-        <input class="option-custom" placeholder="Custom" type="number">
+      <div class="input-with-label">
+        <div class="label-wrap">
+          <label for="bill">Bill</label>
+          <div class="error">Can't be negative</div>
+        </div>
+        <div><input type="number" class="bill" id="bill" placeholder="0" min="0" step="0.01"></div>
       </div>
-      <label>Number of People</label>
-      <div><input type="number" class="npeople" value="5" placeholder="0"></div>
+      <div class="input-with-label">
+        <div class="label-wrap">
+          <label for="option-custom">Select Tip %</label>
+          <div class="error">Can't be negative</div>
+        </div>
+        <div class="tip-percent-options">
+          <div data-value="5" data-active="false">5%</div>
+          <div data-value="10" data-active="false">10%</div>
+          <div data-value="15" data-active="lalse">15%</div>
+          <div data-value="25" data-active="false">25%</div>
+          <div data-value="50" data-active="false">50%</div>
+          <input class="option-custom" id="option-custom" placeholder="Custom" type="number" min="0" step="any">
+        </div>
+      </div>
+      <div class="input-with-label">
+        <div class="label-wrap">
+          <label for="npeople">Number of People</label>
+          <div class="error">Can't be zero</div>
+        </div>
+        <div><input type="number" class="npeople" id="npeople" placeholder="1" min="1"></div>
+      </div>
     </div>
     <div class="output">
       <div class="output-box">
@@ -38,7 +53,7 @@
             <div class="output-pp">/ person</div>
           </div>
           <div class="output-result-right" id="tip">
-            $4.27
+            $0.00
           </div>
         </div>
         <div class="output-result">
@@ -47,7 +62,7 @@
             <div class="output-pp">/ person</div>  
           </div>
           <div class="output-result-right" id="total">
-            $32.79
+            $0.00
           </div>
         </div>
         <div class="spacer"></div>

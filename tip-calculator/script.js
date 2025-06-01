@@ -27,16 +27,15 @@ qs(".bill").addEventListener("input", e => {
 })
 
 qs(".npeople").addEventListener("input", e => {
-    setState("people", e.target.value);
+    setState("people", e.target.value || 1);
 })
 
-const state = {
-    percentage: 15,
-    bill: 142.00,
-    people: 5
-}
+const state = { percentage: 0, bill: 0, people: 1};
 
-const isValid = () => state.percentage > 0 && state.bill > 0 && state.people > 0;
+const isValid = () => 
+    qs(".bill").checkValidity() && 
+    qs(".npeople").checkValidity() && 
+    qs(".option-custom").checkValidity();
 
 const renderState = () => {
     const {percentage, bill, people} = state;
@@ -46,11 +45,14 @@ const renderState = () => {
     qs("#total").innerText = "$" + (total/people).toFixed(2);
 }
 
+const showZeroOutput = () => {
+    qs("#tip").innerText = "$0.00";
+    qs("#total").innerText = "$0.00";
+}
+
 const setState = (key, value) => {
     state[key] = Number(value);
-    if (isValid()) {
-        renderState()
-    }
+    isValid() ? renderState() : showZeroOutput();
 }
 
 const setPercentage = (x) => {
@@ -66,11 +68,11 @@ const setBtnActive = (val) => {
 qs("button").addEventListener("click", e => {
     state.percentage = 0;
     state.bill = 0;
-    state.people = 0;
+    state.people = 1;
     setBtnActive("")
     custom.value = ""
     qs(".bill").value = ""
     qs(".npeople").value = ""
-    qs("#tip").innerText = "$0";
-    qs("#total").innerText = "$0";
+    qs("#tip").innerText = "$0.00";
+    qs("#total").innerText = "$0.00";
 })
