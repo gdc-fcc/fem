@@ -261,3 +261,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+button:disabled {
+    cursor:not-allowed;
+    background-color: hsl(182.22deg 100% 21.18%);
+}

@@ -43,6 +43,7 @@ const renderState = () => {
     const tip = bill * percentage/100
     qs("#tip").innerText = "$" + (tip/people).toFixed(2);
     qs("#total").innerText = "$" + (total/people).toFixed(2);
+    qs("#reset").removeAttribute("disabled");
 }
 
 const showZeroOutput = () => {
@@ -75,6 +76,7 @@ qs("button").addEventListener("click", e => {
     qs(".npeople").value = ""
     qs("#tip").innerText = "$0.00";
     qs("#total").innerText = "$0.00";
+    qs("#reset").setAttribute("disabled", "true");
 })
 
 import {octocat} from "../octocat.js";
