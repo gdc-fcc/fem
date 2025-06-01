@@ -74,3 +74,6 @@ insertAll = (timeframe) => {
 qs("#daily").addEventListener("click", () => insertAll("daily"));
 qs("#weekly").addEventListener("click", () => insertAll("weekly"));
 qs("#monthly").addEventListener("click", () => insertAll("monthly"));
+
+const octocat = {color: 'var(--navy-950)', fill: colors.exercise,
+  url: "https://github.com/gdc-fcc/fem/tree/main/time-tracker"};
