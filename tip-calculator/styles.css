@@ -35,6 +35,10 @@ body {
     font-weight: 700;
     min-height: calc(100vh - 2rem);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 main {
@@ -42,7 +46,6 @@ main {
     max-width: 375px;
     padding: 2rem;
     border-radius: 1rem;
-    margin: auto;
 }
 
 .bill, .npeople {
