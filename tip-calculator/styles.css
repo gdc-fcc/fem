@@ -45,7 +45,7 @@ body {
 main {
     background: white;
     max-width: 375px;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
 }
 
@@ -74,20 +74,25 @@ label {
 .output-box {
     background-color: var(--green-900);
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-top: 3rem;
     border-radius: 1rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
 }
 
 button {
     width: 100%;
     background: hsl(173.47deg 100% 37.84%);
     color: var(--green-900);
-    padding: .5rem 1rem;
+    padding: .8rem 1rem;
     font-size: 1.3rem;
     border-radius: .5rem;
     font-weight: 700;
     cursor: pointer;
+    margin-top: auto;
 }
 
 button:hover {
@@ -95,7 +100,6 @@ button:hover {
 }
 
 .output-result {
-    margin-block: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,12 +115,13 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin-block: 1rem 0.5rem ;
 }
 
 .tip-percent-options > div {
     background-color: var(--green-900);
     color: white;
-    padding: .75rem;
+    padding: .5rem;
     border-radius: .4rem;
     display: flex;
     align-items: center;
@@ -133,6 +138,7 @@ button:hover {
 
 .output-pp {
     color: var(--grey-300);
+    font-size: .8rem;
 }
 
 .option-custom {
@@ -184,10 +190,22 @@ div:has(> .npeople):before {
     translate: 0 -50%;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 0.5rem;
+}
+
 @media (min-width: 710px) {
+  .input-group {
+    padding: 1rem;
+    gap: 2.2rem;
+  }
   main {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    padding: 2rem;
     gap: 2rem;
     max-width: 920px;
   }
@@ -196,12 +214,7 @@ div:has(> .npeople):before {
     margin: 0;
   }
   .output-box {
-    display: flex;
-    flex-direction: column;
     padding: 2.5rem;
-  }
-  .spacer {
-    flex-grow: 1;
   }
   .output-result-right {
     font-size: 3rem;
@@ -222,8 +235,7 @@ div:has(> .npeople):before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-block: 1.4rem .4rem;
-
+    margin-block: 0rem .3rem;
 }
 
 .error {
@@ -259,10 +271,15 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 
 button:disabled {
     cursor:not-allowed;
     background-color: hsl(182.22deg 100% 21.18%);
+}
+
+input:hover {
+    outline: 1px solid hsl(172.5deg 31.75% 49.41%)
 }
