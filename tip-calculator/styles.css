@@ -157,30 +157,6 @@ input {
     cursor: pointer;
 }
 
-div:has(> .bill){
-    position: relative;
-}
-
-div:has(> .bill):before {
-    position: absolute;
-    content: url('images/icon-dollar.svg');
-    left: 1rem;
-    top: 55%;
-    translate: 0 -50%;
-}
-
-div:has(> .npeople) {
-    position:relative;
-}
-
-div:has(> .npeople):before {
-    position: absolute;
-    content: url('images/icon-person.svg');
-    left: 1rem;
-    top: 55%;
-    translate: 0 -50%;
-}
-
 .input-group {
     display: flex;
     flex-direction: column;
@@ -283,4 +259,39 @@ input[type=number] {
 
 input:hover {
     outline: 0.0625rem solid var(--input-outline);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+div:has(> .bill){
+    position: relative;
+}
+
+div:has(> .npeople) {
+    position:relative;
+}
+
+div:has(> .bill):before {
+    position: absolute;
+    content: url('images/icon-dollar.svg');
+    left: 1rem;
+    top: 55%;
+    translate: 0 -50%;
+}
+
+div:has(> .npeople):before {
+    position: absolute;
+    content: url('images/icon-person.svg');
+    left: 1rem;
+    top: 55%;
+    translate: 0 -50%;
 }

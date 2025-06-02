@@ -12,7 +12,7 @@ const octocat = ({color, fill, url}) => {
     color = color || backgroundColor(body);
     url = url || githubUrl();
     fill = fill || "var(--accent, black)";
-    const header = document.createElement("article");
+    const header = document.createElement("section");
     header.innerHTML = html;
     header.querySelector("a").href = url;
     header.querySelector(".octocat").style.color = color;
