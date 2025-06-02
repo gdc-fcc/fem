@@ -7,6 +7,9 @@ document.querySelectorAll('[rel="preload"]').forEach(el => {
 
 const tipCustom = qs(".tip-custom");
 const tipButtons = document.querySelectorAll(".tip-percent-options > div");
+const errorTip = document.querySelector(".input-with-label:has(#tip-custom) .error");
+const errorBill = document.querySelector(".input-with-label:has(#bill) .error");
+const errorNpeople = document.querySelector(".input-with-label:has(#npeople) .error");
 
 tipButtons.forEach(el => {
     el.dataset.value = el.innerText.replace("%", "")
@@ -33,10 +36,30 @@ qs(".npeople").addEventListener("input", e => {
 
 const state = { percentage: 0, bill: 0, people: 1};
 
-const isValid = _ => 
-    qs(".bill").checkValidity() &&
-    qs(".npeople").checkValidity() &&
-    qs(".tip-custom").checkValidity();
+const numberValid = (input, error, checkZero = false) => {
+    const validity = qs(input).validity;
+    if (validity.badInput) {
+        error.innerText = "Bad Input"
+        return false;
+    } else if (validity.rangeUnderflow) {
+        if (checkZero && Number(input.value) === 0) {
+            error.innerText = "Can't be zero"
+        } else {
+            error.innerText = "Can't be negative";
+        }
+        return false;
+    } else if (validity.stepMismatch) {
+        error.innerText = "Too many decimals"
+    }
+    return true;
+}
+
+const isValid = _ => {
+    if (!numberValid(".bill", errorBill)) { return false; }
+    if (!numberValid(".tip-custom", errorTip)) { return false; }
+    if (!numberValid(".npeople", errorNpeople, true)) { return false; }
+    return true;
+}
 
 const renderState = _ => {
     const {percentage, bill, people} = state;
