@@ -5,21 +5,22 @@ document.querySelectorAll('[rel="preload"]').forEach(el => {
     el.removeAttribute("as");
 })
 
-const custom = document.querySelector(".option-custom");
+const tipCustom = qs(".tip-custom");
 const tipButtons = document.querySelectorAll(".tip-percent-options > div");
 
 tipButtons.forEach(el => {
+    el.dataset.value = el.innerText.replace("%", "")
     el.addEventListener("click", e => {
         const value = e.target.dataset.value;
-        setPercentage(value);
+        setState("percentage", value);
         setBtnActive(value);
-        custom.value = "";
+        tipCustom.value = "";
     })
 })
 
-custom.addEventListener("input", e => {
+tipCustom.addEventListener("input", e => {
     setBtnActive("");
-    setPercentage(e.target.value);
+    setState("percentage", e.target.value);
 })
 
 qs(".bill").addEventListener("input", e => {
@@ -32,21 +33,21 @@ qs(".npeople").addEventListener("input", e => {
 
 const state = { percentage: 0, bill: 0, people: 1};
 
-const isValid = () => 
-    qs(".bill").checkValidity() && 
-    qs(".npeople").checkValidity() && 
-    qs(".option-custom").checkValidity();
+const isValid = _ => 
+    qs(".bill").checkValidity() &&
+    qs(".npeople").checkValidity() &&
+    qs(".tip-custom").checkValidity();
 
-const renderState = () => {
+const renderState = _ => {
     const {percentage, bill, people} = state;
     const total = bill * (1 + percentage/100);
     const tip = bill * percentage/100;
     qs("#tip").innerText = "$" + (tip/people).toFixed(2);
     qs("#total").innerText = "$" + (total/people).toFixed(2);
-    qs("#reset").removeAttribute("disabled");
+    qs(".reset-button").removeAttribute("disabled");
 }
 
-const showZeroOutput = () => {
+const showZeroOutput = _ => {
     qs("#tip").innerText = "$0.00";
     qs("#total").innerText = "$0.00";
 }
@@ -56,27 +57,23 @@ const setState = (key, value) => {
     isValid() ? renderState() : showZeroOutput();
 }
 
-const setPercentage = (x) => {
-    setState("percentage", x);
-}
-
 const setBtnActive = (val) => {
     tipButtons.forEach(el => {
         el.dataset.active = el.dataset.value == val;
     })
 }
 
-qs("button").addEventListener("click", e => {
+qs("button").addEventListener("click", _ => {
     state.percentage = 0;
     state.bill = 0;
     state.people = 1;
     setBtnActive("");
-    custom.value = "";
+    tipCustom.value = "";
     qs(".bill").value = "";
     qs(".npeople").value = "";
     qs("#tip").innerText = "$0.00";
     qs("#total").innerText = "$0.00";
-    qs("#reset").setAttribute("disabled", "true");
+    qs(".reset-button").setAttribute("disabled", "true");
 })
 
 import {octocat} from "../octocat.js";

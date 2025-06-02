@@ -14,6 +14,3 @@ A tip calculator app for the [time tracker](https://www.frontendmentor.io/challe
 ## TODO
 
 - different error messges based on `qs("input").validity`
-- add `images/logo.svg`
-- change styling on reset button of there is nothing
-  to reset

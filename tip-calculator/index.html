@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="preload" as="style">
-
 </head>
 <body>
   <header class="logo"><img src="images/logo.svg" alt="app logo" height="54px" width="87px"></header>
@@ -26,55 +25,43 @@
       </div>
       <div class="input-with-label">
         <div class="label-wrap">
-          <label for="option-custom">Select Tip %</label>
+          <label for="tip-custom">Select Tip %</label>
           <div class="error">Can't be negative</div>
         </div>
         <div class="tip-percent-options">
-          <div data-value="5" data-active="false">5%</div>
-          <div data-value="10" data-active="false">10%</div>
-          <div data-value="15" data-active="lalse">15%</div>
-          <div data-value="25" data-active="false">25%</div>
-          <div data-value="50" data-active="false">50%</div>
-          <input class="option-custom" id="option-custom" placeholder="Custom" type="number" min="0" step="any">
+          <div>5%</div><div>10%</div><div>15%</div><div>25%</div><div>50%</div>
+          <input class="tip-custom" id="tip-custom" placeholder="Custom" type="number" min="0" step="any">
         </div>
       </div>
       <div class="input-with-label">
-        <div class="label-wrap">
+        <div class="input-label-wrap">
           <label for="npeople">Number of People</label>
           <div class="error">Can't be zero</div>
         </div>
         <div><input type="number" class="npeople" id="npeople" placeholder="1" min="1"></div>
       </div>
     </div>
-    <div class="output">
       <div class="output-box">
-        <div class="output-result">
-          <div class="output-result-left">
+        <div class="output-with-label">
+          <div class="output-label-wrap">
             <div class="output-label">Tip Amount</div>
             <div class="output-pp">/ person</div>
           </div>
-          <div class="output-result-right" id="tip">
+          <div class="output-value" id="tip">
             $0.00
           </div>
         </div>
-        <div class="output-result">
-          <div class="output-result-left">
+        <div class="output-with-label">
+          <div class="output-label-wrap">
             <div class="output-label">Total</div>
-            <div class="output-pp">/ person</div>  
+            <div class="output-pp">/ person</div>
           </div>
-          <div class="output-result-right" id="total">
+          <div class="output-value" id="total">
             $0.00
           </div>
         </div>
-        <button id="reset" disabled>Reset</button>
-      </div>
+        <button class="reset-button" disabled>Reset</button>
     </div>
-
   </main>
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Gregor de Cillia</a>.
-  </footer>
 </body>
 </html>

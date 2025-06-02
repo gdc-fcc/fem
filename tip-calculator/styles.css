@@ -21,19 +21,10 @@
     border: 0;
 }
 
-.attribution {
-    font-size: .7rem;
-    text-align: center;
-    position: absolute;
-    display: none;
-}
-
 body {
     background: var(--grey-200);
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
     font-weight: 700;
-    min-height: calc(100vh - 2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,13 +54,12 @@ main {
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
 
-.bill::placeholder, .npeople::placeholder {
+::placeholder {
     color: var(--grey-400);
 }
 
 label {
     font-weight: 600;
-    display: inline-block;
     color: var(--grey-500);
 }
 
@@ -84,7 +74,7 @@ label {
     gap: 1.6rem;
 }
 
-button {
+.reset-button {
     width: 100%;
     background: var(--green-600);
     color: var(--green-900);
@@ -96,17 +86,17 @@ button {
     margin-top: auto;
 }
 
-button:hover {
+.reset-button:hover {
     background: var(--btn-hover);
 }
 
-.output-result {
+.output-with-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.output-result-right {
+.output-value {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--green-600);
@@ -142,7 +132,7 @@ button:hover {
     font-size: .8rem;
 }
 
-.option-custom {
+.tip-custom {
     background: var(--grey-50);
     color: var(--green-900);
     text-align: right;
@@ -154,7 +144,7 @@ button:hover {
     border-radius: .4rem;
 }
 
-.option-custom::placeholder {
+.tip-custom::placeholder {
     color: var(--grey-500);
 }
 
@@ -209,6 +199,7 @@ div:has(> .npeople):before {
     body {
         gap: 8.125vh;
         margin: 1rem;
+        min-height: calc(100vh - 2rem);
     }
     .input-group {
         padding: 1rem;
@@ -221,14 +212,12 @@ div:has(> .npeople):before {
         max-width: 57.5rem;
         border-radius: 1rem;
     }
-    .output, .output-box {
+    .output-box {
         height: 100%;
         margin: 0;
-    }
-    .output-box {
         padding: 2.5rem;
     }
-    .output-result-right {
+    .output-value {
         font-size: 3rem;
     }
 }
@@ -243,7 +232,7 @@ div:has(> .npeople):before {
     
 }
 
-.label-wrap {
+.input-label-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -287,7 +276,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-button:disabled {
+.reset-button:disabled {
     cursor:not-allowed;
     background-color: var(--btn-disabled);
 }
