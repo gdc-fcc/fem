@@ -16,7 +16,7 @@ const octoStyle = (color, fill) => `
     border: 0; 
     right: 0; 
     transition: fill 1s; 
-    z-index: 5";
+    z-index: 5;
   }
   .octo-arm {
     transform-origin: 130px 106px;
