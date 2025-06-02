@@ -63,7 +63,7 @@ label {
     color: var(--grey-500);
 }
 
-.output-box {
+.output-group {
     background-color: var(--green-900);
     color: var(--white);
     padding: 1.5rem;
@@ -212,7 +212,7 @@ div:has(> .npeople):before {
         max-width: 57.5rem;
         border-radius: 1rem;
     }
-    .output-box {
+    .output-group {
         height: 100%;
         margin: 0;
         padding: 2.5rem;
