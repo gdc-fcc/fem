@@ -19,7 +19,7 @@
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: .7rem;
     text-align: center;
     position: absolute;
     display: none;
@@ -45,7 +45,7 @@ main {
     display: grid;
     gap: 1.5rem;
     background: white;
-    max-width: 375px;
+    max-width: 23.4375rem;
     padding: 1.5rem;
     padding-bottom: 2rem;
     border-radius: 1rem 1rem 0 0;
@@ -202,7 +202,7 @@ div:has(> .npeople):before {
     margin-top: 3.3rem;
 }
 
-@media (min-width: 710px) {
+@media (min-width: 44.375rem) {
     .logo {
         margin-top: 1rem;
     }
@@ -218,7 +218,7 @@ div:has(> .npeople):before {
         grid-template-columns: 2fr 3fr;
         padding: 2rem;
         gap: 2rem;
-        max-width: 920px;
+        max-width: 57.5rem;
         border-radius: 1rem;
     }
     .output, .output-box {
@@ -233,7 +233,7 @@ div:has(> .npeople):before {
     }
 }
 
-@media (min-width: 875px) {
+@media (min-width: 54.6875rem) {
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -257,15 +257,15 @@ div:has(> .npeople):before {
 }
 
 input:invalid {
-    outline: 2px solid var(--error);
+    outline: 0.125rem solid var(--error);
 }
 
 input:focus-visible {
-    outline: 2px solid hsl(172.5deg 31.75% 49.41%);
+    outline: 0.125rem solid hsl(172.5deg 31.75% 49.41%);
 }
 
 input:focus-visible:invalid {
-    outline: 2px solid var(--error);
+    outline: 0.125rem solid var(--error);
 }
 
 .input-with-label:has(input:invalid) .error {
@@ -293,5 +293,5 @@ button:disabled {
 }
 
 input:hover {
-    outline: 1px solid hsl(172.5deg 31.75% 49.41%);
+    outline: 0.0625rem solid hsl(172.5deg 31.75% 49.41%);
 }
