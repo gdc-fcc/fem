@@ -17,6 +17,9 @@ const octocat = ({color, fill, url}) => {
     header.querySelector("a").href = url;
     header.querySelector(".octocat").style.color = color;
     header.querySelector(".octocat").style.fill = fill;
+    header.style.position = "absolute";
+    header.style.top = 0;
+    header.style.right = 0;
     body.appendChild(header);
 }
 

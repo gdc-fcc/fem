@@ -30,7 +30,6 @@
 
 body {
     background: var(--grey-200);
-    margin: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -39,14 +38,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2.2rem;
 }
 
 main {
+    display: grid;
+    gap: 1.5rem;
     background: white;
     max-width: 375px;
     padding: 1.5rem;
-    border-radius: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .bill, .npeople {
@@ -77,7 +79,6 @@ label {
     padding: 1.5rem;
     padding-top: 3rem;
     border-radius: 1rem;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -193,29 +194,32 @@ div:has(> .npeople):before {
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 1.6rem;
     padding: 0.5rem;
 }
 
 .logo {
-    margin-top: 2rem;
+    margin-top: 3.3rem;
 }
 
 @media (min-width: 710px) {
     .logo {
-        margin-top: 0;
+        margin-top: 1rem;
     }
-
+    body {
+        gap: 8.125vh;
+        margin: 1rem;
+    }
     .input-group {
         padding: 1rem;
         gap: 2.2rem;
     }
     main {
-        display: grid;
         grid-template-columns: 2fr 3fr;
         padding: 2rem;
         gap: 2rem;
         max-width: 920px;
+        border-radius: 1rem;
     }
     .output, .output-box {
         height: 100%;
