@@ -42,7 +42,7 @@ const numberValid = (input, error, checkZero = false) => {
         error.innerText = "Bad Input"
         return false;
     } else if (validity.rangeUnderflow) {
-        if (checkZero && Number(input.value) === 0) {
+        if (checkZero && Number(qs(input).value) === 0) {
             error.innerText = "Can't be zero"
         } else {
             error.innerText = "Can't be negative";
