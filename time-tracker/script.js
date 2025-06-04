@@ -5,14 +5,21 @@ document.querySelectorAll('[rel="preload"]').forEach(el => {
   el.removeAttribute("as");
 })
 
-const data = [];
+import iconExercise from "./images/icon-exercise.svg";
+import iconPlay from "./images/icon-play.svg";
+import iconSocial from "./images/icon-social.svg";
+import iconStudy from "./images/icon-study.svg";
+import iconWork from "./images/icon-work.svg";
+import iconSelfCare from "./images/icon-self-care.svg";
 
-fetch("data.json")
-  .then(x => x.json())
-  .then(x => {
-    x.forEach(item => data.push(item));
-    insertAll('weekly');
-  });
+const icons = {
+  "exercise": iconExercise,
+  "play": iconPlay,
+  "social": iconSocial,
+  "study": iconStudy,
+  "work": iconWork,
+  "self-care": iconSelfCare
+};
 
 const colors = {
   "work": "hsl(15, 100%, 70%)",
@@ -25,7 +32,7 @@ const colors = {
 
 const template = ({ name, current, previous, unit, img, color }) => `
 <section class="card activity-card" style="background: ${color}">
-  <img class="activity-img" src="images/icon-${img}.svg" alt="">
+  <img class="activity-img" src="${icons[img]}" alt="">
   <div class="card-top">
     <div class="activity-title">
       <h2>${name}</h2>
@@ -79,3 +86,6 @@ qs("#monthly").addEventListener("click", () => insertAll("monthly"));
 
 import { octocat } from "../octocat.js";
 octocat({ fill: colors.exercise });
+
+import data from "./data.json";
+insertAll('weekly');
