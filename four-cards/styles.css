@@ -1,5 +1,11 @@
-.attribution { font-size: .7rem; text-align: center; }
-.attribution a { color: var(--link); }
+.attribution {
+  font-size: .7rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--link);
+}
 
 :root {
   --red: hsl(0, 78%, 62%);
@@ -23,9 +29,10 @@ body {
   margin: 2em;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 600;
-  margin-block:0;
+  margin-block: 0;
 }
 
 p {
@@ -99,7 +106,9 @@ header p {
       "S T"
       "K C";
   }
-  .slogan, h1 {
+
+  .slogan,
+  h1 {
     font-size: 2rem;
   }
 }
@@ -119,22 +128,29 @@ article p {
       ". K .";
     margin-top: 4.5em;
   }
-  body{
+
+  body {
     margin-top: 6.32rem;
   }
-  article > img {
+
+  article>img {
     margin-top: 1.8rem;
     margin-bottom: 2.5rem;
   }
+
   article p {
     font-size: .8rem;
   }
-  .slogan, h1 {
+
+  .slogan,
+  h1 {
     font-size: 2.3rem;
   }
+
   h1 {
     line-height: 1.2em;
   }
+
   .hook {
     max-width: 34em;
     margin-top: 1rem;
@@ -152,6 +168,5 @@ img {
 
 
 .slogan {
-   margin-bottom: 0
+  margin-bottom: 0
 }
-

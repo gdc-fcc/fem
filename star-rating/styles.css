@@ -1,7 +1,12 @@
-.attribution { 
+.attribution {
     display: none;
-    font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 :root {
     --orange-500: hsl(25, 97%, 53%);
@@ -17,7 +22,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    border:0;
+    border: 0;
 }
 
 body {
@@ -66,9 +71,10 @@ p {
     border-radius: 2rem;
 }
 
-.card-main, .modal-inner {
+.card-main,
+.modal-inner {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1.3rem;
 }
 
@@ -107,7 +113,7 @@ img.thanks {
     background: var(--grey-850);
     width: fit-content;
     margin: auto;
-    padding:  .6rem 1.4rem;
+    padding: .6rem 1.4rem;
     border-radius: 2rem;
     font-size: 14px;
 }
@@ -117,7 +123,8 @@ img.thanks {
     justify-content: space-between;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     background: var(--White);
     color: black;
     outline: 0;
@@ -136,11 +143,12 @@ div[role="radio"] {
 }
 
 div[role="radio"][aria-checked="true"] {
-    background:  var(--orange-400);
+    background: var(--orange-400);
     color: var(--grey-900);
 }
 
-div[role="radio"]:focus, div[role="radio"]:hover {
+div[role="radio"]:focus,
+div[role="radio"]:hover {
     background: var(--White);
     color: black;
     outline: 0;
@@ -151,5 +159,5 @@ button:disabled {
 }
 
 .github-corner:focus svg {
-  outline: 1px solid white;
+    outline: 1px solid white;
 }

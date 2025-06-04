@@ -1,7 +1,13 @@
-.attribution { text-align: center; padding-bottom: 1em; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  text-align: center;
+  padding-bottom: 1em;
+}
 
-body{
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
   font-family: "Outfit", Arial, sans-serif;
   color: var(--stone-600);
   margin: 0;
@@ -20,7 +26,8 @@ body{
 }
 
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -54,7 +61,7 @@ b {
   font-size: 1.25rem;
 }
 
-.prep-time > ul {
+.prep-time>ul {
   margin-bottom: 0;
 }
 
@@ -68,15 +75,16 @@ b {
   background: white;
 }
 
-.wrapper > *:not(img) {
+.wrapper>*:not(img) {
   margin-inline: 2rem;
 }
 
-li + li {
+li+li {
   margin-top: .5rem;
 }
 
-p, li {
+p,
+li {
   line-height: 1.6em;
 }
 
@@ -86,7 +94,8 @@ ol ::marker,
   font-weight: 700;
 }
 
-ul, ol {
+ul,
+ol {
   padding-inline-start: 1.6em;
 }
 
@@ -110,7 +119,7 @@ td {
 }
 
 
-tr:not(:first-of-type) > td {
+tr:not(:first-of-type)>td {
   border-top: .06em solid var(--stone-100);
 }
 
@@ -120,12 +129,13 @@ hr {
 
 @media (min-width: 43.75em) {
   .wrapper {
-     border-radius: 1.56em;
-     margin-block: 8em;
+    border-radius: 1.56em;
+    margin-block: 8em;
   }
+
   .food-img {
-     margin: 2.5em;
-     width: calc(100% - 5em);
-     border-radius: 0.625em;
+    margin: 2.5em;
+    width: calc(100% - 5em);
+    border-radius: 0.625em;
   }
 }

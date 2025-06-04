@@ -23,7 +23,7 @@ const colors = {
   "self-care": "hsl(43, 84%, 65%)"
 }
 
-const template = ({name, current, previous, unit, img, color}) => `
+const template = ({ name, current, previous, unit, img, color }) => `
 <section class="card activity-card" style="background: ${color}">
   <img class="activity-img" src="images/icon-${img}.svg" alt="">
   <div class="card-top">
@@ -39,8 +39,10 @@ const template = ({name, current, previous, unit, img, color}) => `
 </section>`;
 
 const toKebapCase = str => str.toLowerCase().replace(" ", "-");
-const lastText = {"daily": "Yesterday", "weekly": "Last Week", 
-  "monthly": "Last Month"};
+const lastText = {
+  "daily": "Yesterday", "weekly": "Last Week",
+  "monthly": "Last Month"
+};
 
 const insertCard = (activity, timeframe) => {
   const key = toKebapCase(activity);
@@ -48,8 +50,8 @@ const insertCard = (activity, timeframe) => {
   const tf = el.timeframes[timeframe];
   const res = template({
     name: activity,
-    current: tf.current, 
-    previous: tf.previous, 
+    current: tf.current,
+    previous: tf.previous,
     unit: lastText[timeframe],
     img: key,
     color: colors[key]
@@ -75,5 +77,5 @@ qs("#daily").addEventListener("click", () => insertAll("daily"));
 qs("#weekly").addEventListener("click", () => insertAll("weekly"));
 qs("#monthly").addEventListener("click", () => insertAll("monthly"));
 
-import {octocat} from "../octocat.js";
-octocat({fill: colors.exercise});
+import { octocat } from "../octocat.js";
+octocat({ fill: colors.exercise });

@@ -16,8 +16,17 @@
   box-sizing: border-box;
 }
 
-.attribution { font-size: .7em; position: absolute; bottom: 0; left: 0; right: 0}
-.attribution a { color: var(--link-color) }
+.attribution {
+  font-size: .7em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+.attribution a {
+  color: var(--link-color)
+}
 
 body {
   color: var(--white);

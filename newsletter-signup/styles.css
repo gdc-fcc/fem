@@ -2,7 +2,7 @@
   --red: hsl(4, 100%, 67%);
   --blue-800: hsl(234, 29%, 20%);
   --blue-700: hsl(235, 18%, 26%);
-  --grey: hsl(0, 0%,58%);
+  --grey: hsl(0, 0%, 58%);
   --white: hsl(0, 0%, 100%);
   --gradient-start: hsl(353.89deg 100% 67.25%);
   --gradient-end: hsl(7.42deg 100% 65.1%);
@@ -35,7 +35,7 @@ body {
 }
 
 main {
-    background: var(--white);
+  background: var(--white);
 }
 
 .container {
@@ -54,11 +54,12 @@ input[type="email"] {
   border-radius: .5rem;
   border: .0625rem solid var(--grey);
   font-size: 1rem;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-input[type="email"]:hover, input[type="email"]:focus {
-  outline: .0625rem solid var(--grey);  
+input[type="email"]:hover,
+input[type="email"]:focus {
+  outline: .0625rem solid var(--grey);
 }
 
 .error {
@@ -86,21 +87,24 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus-visible {
+button:hover,
+button:focus-visible {
   background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
   box-shadow: 1rem 1.5rem 2rem -.5rem var(--box-shadow);
 }
 
-.attribution { 
-  font-size: .7rem; 
-  text-align: center; 
+.attribution {
+  font-size: .7rem;
+  text-align: center;
   position: absolute;
   bottom: -1.5rem;
   left: 0;
   right: 0;
 }
 
-.attribution a { color: var(--link); }
+.attribution a {
+  color: var(--link);
+}
 
 input {
   margin-block: .6rem 1.5rem;
@@ -135,7 +139,7 @@ h2 {
   font-size: 2.5rem;
 }
 
-dialog > img {
+dialog>img {
   width: fit-content;
   margin-bottom: 1rem;
 }
@@ -189,13 +193,16 @@ p {
     margin: auto;
     gap: 1rem;
   }
+
   h1 {
     font-size: min(7.46vw, 3.6rem);
     margin-block: 0;
   }
+
   h2 {
     font-size: 3.5rem;
   }
+
   .hero-img {
     content: url("./assets/images/illustration-sign-up-desktop.svg");
     height: 37.0625rem;
@@ -203,11 +210,13 @@ p {
     object-fit: cover;
     border-radius: 1rem;
   }
+
   .container {
     max-width: unset;
     flex-grow: 1;
     padding: 0rem;
   }
+
   dialog[open] {
     max-width: 32rem;
     max-height: 32rem;
@@ -215,9 +224,11 @@ p {
     border-radius: 2rem;
     padding: 4rem;
   }
+
   ::backdrop {
     background: var(--ble-800);
   }
+
   body {
     margin: 1rem;
     min-height: calc(100vh - 2rem);
@@ -229,15 +240,17 @@ p {
     gap: 3rem;
     padding: 1.5rem;
   }
+
   .container {
     padding: 2rem;
   }
+
   h1 {
     font-size: min(5.8vw, 3.6rem);
   }
 }
 
-.mail-label-wrap{
+.mail-label-wrap {
   display: flex;
   justify-content: space-between;
   font-size: .8rem;
@@ -246,10 +259,21 @@ p {
 @media (prefers-reduced-motion: no-preference) {
 
   @keyframes shake {
-    0% { transform: translateX(0rem); }
-    25% { transform: translateX(0.5rem); }
-    75% { transform: translateX(-0.5rem); }
-    100% { transform: translateX(0rem); }
+    0% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(0.5rem);
+    }
+
+    75% {
+      transform: translateX(-0.5rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
   }
 
   .shake {

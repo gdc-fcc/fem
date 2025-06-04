@@ -42,7 +42,8 @@ main {
     border-radius: 1rem 1rem 0 0;
 }
 
-.bill, .npeople {
+.bill,
+.npeople {
     width: 100%;
     padding: .5rem;
     border-radius: .5rem;
@@ -106,10 +107,10 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-block: 1rem 0.5rem ;
+    margin-block: 1rem 0.5rem;
 }
 
-.tip-percent-options > div {
+.tip-percent-options>div {
     background-color: var(--green-900);
     color: var(--white);
     padding: .5rem;
@@ -122,7 +123,7 @@ label {
     cursor: pointer;
 }
 
-.tip-percent-options > div:hover {
+.tip-percent-options>div:hover {
     background: var(--btn-hover);
     color: var(--green-900);
 }
@@ -148,7 +149,7 @@ label {
     color: var(--grey-500);
 }
 
-.tip-percent-options > div[data-active="true"] {
+.tip-percent-options>div[data-active="true"] {
     background: var(--green-600);
     color: var(--green-900);
 }
@@ -172,15 +173,18 @@ input {
     .logo {
         margin-top: 1rem;
     }
+
     body {
         gap: 8.125vh;
         margin: 1rem;
         min-height: calc(100vh - 2rem);
     }
+
     .input-group {
         padding: 1rem;
         gap: 2.2rem;
     }
+
     main {
         grid-template-columns: 2fr 3fr;
         padding: 2rem;
@@ -188,11 +192,13 @@ input {
         max-width: 57.5rem;
         border-radius: 1rem;
     }
+
     .output-group {
         height: 100%;
         margin: 0;
         padding: 2.5rem;
     }
+
     .output-value {
         font-size: 3rem;
     }
@@ -202,10 +208,11 @@ input {
     main {
         grid-template-columns: 1fr 1fr;
     }
+
     .tip-percent-options {
         grid-template-columns: 1fr 1fr 1fr;
-      }
-    
+    }
+
 }
 
 .input-label-wrap {
@@ -253,7 +260,7 @@ input[type=number] {
 }
 
 .reset-button:disabled {
-    cursor:not-allowed;
+    cursor: not-allowed;
     background-color: var(--btn-disabled);
 }
 
@@ -268,16 +275,16 @@ input:hover {
     padding: 0;
     margin: -0.0625rem;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
-div:has(> .bill){
+div:has(> .bill) {
     position: relative;
 }
 
 div:has(> .npeople) {
-    position:relative;
+    position: relative;
 }
 
 div:has(> .bill):before {

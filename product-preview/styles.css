@@ -1,7 +1,13 @@
-.attribution { font-size: .7em; text-align: center; }
-.attribution a { color: var(--link-color); }
+.attribution {
+  font-size: .7em;
+  text-align: center;
+}
 
-:root{
+.attribution a {
+  color: var(--link-color);
+}
+
+:root {
   --green-500: hsl(158, 36%, 37%);
   --green-700: hsl(158, 42%, 18%);
   --black: hsl(212, 21%, 14%);
@@ -37,7 +43,7 @@ h1,
   font-size: clamp(1.2em, 8.53333vw, 2em)
 }
 
-h1{
+h1 {
   line-height: 1em;
   color: var(--black);
 }
@@ -97,23 +103,26 @@ footer {
 
 @media (min-width: 40rem) {
   .card {
-     flex-direction: row;
-     max-width: 38.125em;
-     height: 28.5em;
+    flex-direction: row;
+    max-width: 38.125em;
+    height: 28.5em;
   }
-  .card-1{
-     flex: 1 0 50%;
+
+  .card-1 {
+    flex: 1 0 50%;
   }
+
   .card-2 {
-     padding: 2em;
+    padding: 2em;
   }
+
   p {
-     margin-block: 2em;
+    margin-block: 2em;
   }
 }
 
 @media (max-width: 12.1875em) {
-  button > img {
+  button>img {
     display: none;
   }
 }

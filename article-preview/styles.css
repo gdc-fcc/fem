@@ -31,7 +31,7 @@ h1 {
   font-weight: 700;
 }
 
-.card-content > p {
+.card-content>p {
   font-size: 1.05rem;
   line-height: 1.7rem;
 }
@@ -48,7 +48,7 @@ h1 {
 .card-footer {
   display: grid;
   grid-template-columns: 4.61538rem 1fr 2.30769rem;
-  grid-template-areas: 
+  grid-template-areas:
     "A N S"
     "A D S";
   align-items: center;
@@ -72,7 +72,7 @@ h1 {
   grid-area: D;
 }
 
-.share { 
+.share {
   grid-area: S;
   background: var(--light-blue);
   display: flex;
@@ -90,7 +90,10 @@ h1 {
   right: 0;
   background: white;
 }
-.attribution a { color: var(--link); }
+
+.attribution a {
+  color: var(--link);
+}
 
 .card-img {
   object-fit: cover;
@@ -139,17 +142,20 @@ h1 {
 
 @media (min-width:47.25rem) {
   .card {
-     flex-direction: row;
-     max-width: 56rem;
+    flex-direction: row;
+    max-width: 56rem;
   }
+
   .card-img {
-     width: 22rem;
-     height: 22rem;
-     max-height: 21.5rem;
+    width: 22rem;
+    height: 22rem;
+    max-height: 21.5rem;
   }
+
   h1 {
     font-size: 1.6rem;
   }
+
   .tooltip {
     top: -5.9rem;
     bottom: 5rem;
@@ -157,6 +163,7 @@ h1 {
     left: 14rem;
     right: -1rem;
   }
+
   .tooltip::after {
     content: '';
     position: absolute;
@@ -166,9 +173,11 @@ h1 {
     border-right: 1rem solid transparent;
     border-top: 1rem solid var(--very-dark-blue);
   }
+
   .share-icon-wrap {
     display: none;
   }
+
   .card-footer {
     margin-top: 0;
   }
@@ -183,7 +192,7 @@ h1 {
   filter: brightness(0%) invert(90%) sepia(8%) saturate(323%) hue-rotate(186deg) brightness(107%) contrast(94%);
 }
 
-.share-icon{
+.share-icon {
   filter: brightness(0%) invert(90%) sepia(8%) saturate(323%) hue-rotate(186deg) brightness(107%) contrast(94%);
 }
 

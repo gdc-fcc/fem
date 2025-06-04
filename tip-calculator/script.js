@@ -34,7 +34,7 @@ qs(".npeople").addEventListener("input", e => {
     setState("people", e.target.value || 1);
 })
 
-const state = { percentage: 0, bill: 0, people: 1};
+const state = { percentage: 0, bill: 0, people: 1 };
 
 const numberValid = (input, error, checkZero = false) => {
     const validity = qs(input).validity;
@@ -62,11 +62,11 @@ const isValid = _ => {
 }
 
 const renderState = _ => {
-    const {percentage, bill, people} = state;
-    const total = bill * (1 + percentage/100);
-    const tip = bill * percentage/100;
-    qs("#tip").innerText = "$" + (tip/people).toFixed(2);
-    qs("#total").innerText = "$" + (total/people).toFixed(2);
+    const { percentage, bill, people } = state;
+    const total = bill * (1 + percentage / 100);
+    const tip = bill * percentage / 100;
+    qs("#tip").innerText = "$" + (tip / people).toFixed(2);
+    qs("#total").innerText = "$" + (total / people).toFixed(2);
     qs(".reset-button").removeAttribute("disabled");
 }
 
@@ -99,5 +99,5 @@ qs("button").addEventListener("click", _ => {
     qs(".reset-button").setAttribute("disabled", "true");
 })
 
-import {octocat} from "../octocat.js";
+import { octocat } from "../octocat.js";
 octocat({});

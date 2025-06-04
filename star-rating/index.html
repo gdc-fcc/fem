@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="accesible rating component">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="preload" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="preload" as="style">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" type="module" defer></script>
-</head>
-<body>
-  <main class="card card-main">
-    <div><img class="star" src="images/icon-star.svg" alt=""></div>
-    <h1 id="h1">How did we do?</h1>
-    <p id="description">Please let us know how we did with your support request. All feedback is appreciated
-       to help us improve our offering!</p>
-      <div class="rating-options" role="radiogroup" aria-labelledby="h1" aria-describedby="description">
-        <div role="radio" aria-checked="false" tabindex="0">1</div>
-        <div role="radio" aria-checked="false" tabindex="-1">2</div>
-        <div role="radio" aria-checked="false" tabindex="-1">3</div>
-        <div role="radio" aria-checked="false" tabindex="-1">4</div>
-        <div role="radio" aria-checked="false" tabindex="-1">5</div>
-      </div>
-      <button type="submit" command="show-modal" commandfor="modal" disabled>Submit</button>
-  </main>
 
-  <dialog id="modal" class="card" closedby="any">
-    <div class="modal-inner">
-    <img class="thanks" src="images/illustration-thank-you.svg" width="162" height="108">
-    <div class="echo">You selected <span id="rating-out"></span> out of 5</div>
-      <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support,
-         don&rsquo;t hesitate to get in touch!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="accesible rating component">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="preload" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module" defer></script>
+</head>
+
+<body>
+    <main class="card card-main">
+        <div><img class="star" src="images/icon-star.svg" alt=""></div>
+        <h1 id="h1">How did we do?</h1>
+        <p id="description">Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        <div class="rating-options" role="radiogroup" aria-labelledby="h1" aria-describedby="description">
+            <div role="radio" aria-checked="false" tabindex="0">1</div>
+            <div role="radio" aria-checked="false" tabindex="-1">2</div>
+            <div role="radio" aria-checked="false" tabindex="-1">3</div>
+            <div role="radio" aria-checked="false" tabindex="-1">4</div>
+            <div role="radio" aria-checked="false" tabindex="-1">5</div>
+        </div>
+        <button type="submit" command="show-modal" commandfor="modal" disabled>Submit</button>
+    </main>
+
+    <dialog id="modal" class="card" closedby="any">
+        <div class="modal-inner">
+            <img class="thanks" alt src="images/illustration-thank-you.svg" width="162" height="108">
+            <div class="echo">You selected <span id="rating-out"></span> out of 5</div>
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support,
+                don&rsquo;t hesitate to get in touch!</p>
+        </div>
+    </dialog>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
     </div>
-  </dialog>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>

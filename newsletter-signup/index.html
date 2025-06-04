@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap" rel="preload" as="style">
   <script src="./script.js" type="module" defer></script>
 </head>
-<body><main>
-  <img class="hero-img" alt="" src=""/>
-  <div class="container">
-    <h1>Stay updated!</h1>
+
+<body>
+  <main>
+    <img class="hero-img" alt="" src="" />
+    <div class="container">
+      <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
         <li>Product discovery and building what matters</li>
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
-    </ul>
-    <form>
-      <div class="mail-label-wrap">
-        <label for="email">Email address</label>
-        <span class="error">Valid email required</span>
-      </div>
-      <input type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}">
-      <button type="submit">Subscribe to monthly newsletter</button>
-      <div class="attribution-wrap"><div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/gdc-fcc/fem/tree/main/newsletter-signup">Gregor de Cillia</a>.
-      </div></div>
-    </form>
-  </div>
-  <dialog closedby="any">
-    <div class="spacer"></div>
-    <img src="./assets/images/icon-success.svg" alt="">
-    <h2>Thanks for subscribing!</h2>
-    <p>A confirmation email has been sent to <span id="email" class="modal-email">ash@loremcompany.com</span>. 
-    Please open it and click the button inside to confirm your subscription.</p>
-    <div class="spacer"></div>
-    <button type="button" id="close-modal">Dismiss message</button>
-  </dialog>
-</main></body>
+      </ul>
+      <form>
+        <div class="mail-label-wrap">
+          <label for="email">Email address</label>
+          <span class="error">Valid email required</span>
+        </div>
+        <input type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}">
+        <button type="submit">Subscribe to monthly newsletter</button>
+        <div class="attribution-wrap">
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/gdc-fcc/fem/tree/main/newsletter-signup">Gregor de Cillia</a>.
+          </div>
+        </div>
+      </form>
+    </div>
+    <dialog closedby="any">
+      <div class="spacer"></div>
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="email" class="modal-email">ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <div class="spacer"></div>
+      <button type="button" id="close-modal">Dismiss message</button>
+    </dialog>
+  </main>
+</body>
+
 </html>

@@ -25,5 +25,5 @@ qs("#close-modal").addEventListener('click', _ => {
   qs("dialog").close();
 })
 
-import {octocat} from "../octocat.js";
-octocat({fill: "var(--red)"});
+import { octocat } from "../octocat.js";
+octocat({ fill: "var(--red)" });

@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
@@ -13,8 +13,14 @@ body{
   min-height: calc(100vh - 6rem);
 }
 
-.attribution { font-size: 1.1rem; text-align: center; }
-.attribution a { color: var(--link); }
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--link);
+}
 
 article {
   max-width: 60rem;
@@ -137,6 +143,7 @@ main {
       "Ja Pa Pa"
       "Ki Ki ."
   }
+
   .big-quotes {
     display: block;
   }
@@ -149,11 +156,13 @@ main {
       "Da Da Jo Ki"
       "Ja Pa Pa Ki"
   }
+
   .pitch {
     font-size: 1.99rem;
     line-height: 2.3rem;
     margin-block: 1.6rem 1rem;
   }
+
   .quote {
     line-height: 1.8rem;
     font-size: 1.3rem;

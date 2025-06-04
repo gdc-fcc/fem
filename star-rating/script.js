@@ -55,7 +55,7 @@ const hndleKeyDown = (event) => {
         case 'ArrowDown':
         case 'Right':
         case 'ArrowRight':
-            selectRadioButton((index+1));
+            selectRadioButton((index + 1));
             break;
         case 'Up':
         case 'ArrowUp':
@@ -76,5 +76,5 @@ document.querySelectorAll('[role="radiogroup"] > *').forEach((rb, i) => {
     rb.addEventListener("keydown", hndleKeyDown)
 })
 
-import {octocat} from "../octocat.js";
-octocat({fill:'#fc7614', color: '#101215'});
+import { octocat } from "../octocat.js";
+octocat({ fill: '#fc7614', color: '#101215' });

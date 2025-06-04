@@ -28,5 +28,5 @@ qs(".tt-trigger").forEach(x => {
   x.addEventListener("click", toggleTooltip);
 })
 
-import {octocat} from "../octocat.js";
-octocat({fill: "hsl(169.18deg 29.76% 40.2%)"});
+import { octocat } from "../octocat.js";
+octocat({ fill: "hsl(169.18deg 29.76% 40.2%)" });
