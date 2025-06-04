@@ -61,6 +61,7 @@ body {
   border: 0;
   font-weight: 700;
   font-size: .832em;
+  text-decoration: none;
 }
 
 .card a:hover {
