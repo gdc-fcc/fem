@@ -20,6 +20,12 @@ const octoStyle = (color, fill) => `
   .octo-arm {
     transform-origin: 130px 106px;
   }
+  @media (prefers-reduced-motion: reduce) {
+    .github-corner:hover .octo-arm,
+    .github-corner .octo-arm {
+      animation: none !important;
+    }
+  }
   .github-corner:hover .octo-arm{
     animation:octocat-wave 560ms ease-in-out
   }
