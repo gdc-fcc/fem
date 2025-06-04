@@ -28,12 +28,15 @@
             <div role="radio" aria-checked="false" tabindex="-1">4</div>
             <div role="radio" aria-checked="false" tabindex="-1">5</div>
         </div>
-        <button type="submit" command="show-modal" commandfor="modal" disabled>Submit</button>
+        <button type="submit" disabled aria-describedby="submit-help">Submit</button>
+        <span id="submit-help" class="visually-hidden">
+  Submit will become active once you select a rating.
+</span>
     </main>
 
     <dialog id="modal" class="card" closedby="any">
         <div class="modal-inner">
-            <img class="thanks" alt src="images/illustration-thank-you.svg" width="162" height="108">
+            <img class="thanks" alt="" src="images/illustration-thank-you.svg" width="162" height="108">
             <div class="echo">You selected <span id="rating-out"></span> out of 5</div>
             <h2>Thank you!</h2>
             <p>We appreciate you taking the time to give a rating. If you ever need more support,

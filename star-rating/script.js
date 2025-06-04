@@ -6,13 +6,9 @@ document.querySelectorAll('[rel="preload"]').forEach(el => {
 })
 
 qs('button[type="submit"]').addEventListener("click", e => {
+    console.log('click')
     e.preventDefault();
     const rating = ratings.findIndex(rating => rating.ariaChecked === "true") + 1;
-    if (rating === 0) {
-        // TODO: accessible error message
-        console.error("no rating selected");
-        return;
-    }
     qs("#rating-out").innerText = rating;
     qs("dialog").showModal();
     setTimeout(_ => document.addEventListener("click", showTarget), 0);
@@ -43,6 +39,8 @@ const selectRadioButton = i => {
     button.ariaChecked = "true";
     button.setAttribute("tabindex", "0");
     qs('button[type="submit"]').removeAttribute("disabled");
+    qs('button[type="submit"]').removeAttribute("aria-describedby");
+    document.getElementById("submit-help")?.remove();
 }
 
 const hndleKeyDown = (event) => {
