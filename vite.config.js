@@ -2,12 +2,14 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import { compression } from 'vite-plugin-compression2'
+import vitePluginHtmlMinify from 'vite-plugin-html-minify'
+
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   build: {
-    minify: 'terser',
+    minify: 'esbuild',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
@@ -27,6 +29,6 @@ export default defineConfig({
     },
   },
     plugins: [
-    compression()
+     vitePluginHtmlMinify(), compression()
   ],
 })
