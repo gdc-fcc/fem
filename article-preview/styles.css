@@ -59,6 +59,7 @@ h1 {
 .avatar {
   grid-area: A;
   width: 3.07692rem;
+  height: 3.07692rem;
   border-radius: 50%;
 }
 
