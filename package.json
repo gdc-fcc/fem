@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "vite-plugin-compression2": "^1.4.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "vite build",
+    "serve": "live-server dist",
+    "deploy": "vercel deploy dist --prebuillt"
+  }
+}

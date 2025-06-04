@@ -7,3 +7,7 @@ These are learning projects so if you have any suggestions for improvements plea
 ## How do I use this?
 
 Check out the folders above or go to [the github pages site for this repo](https://gdc-fcc.github.io/fem/) to see them in action!
+
+TODO
+
+- bundler for inlining css

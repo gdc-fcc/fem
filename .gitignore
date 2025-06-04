@@ -5,3 +5,5 @@
 */.gitignore
 */README-template.md
 */README_orig.md
+dist
+node_modules
